@@ -1,0 +1,12 @@
+/* Astryx design system — load order matters:
+   reset → astryx-base → astryx-theme → app styles (unlayered, wins). */
+@import '@astryxdesign/core/reset.css';
+@import '@astryxdesign/core/astryx.css';
+@import '@astryxdesign/theme-matcha/theme.css';
+
+/* Existing editorial styles for the storefront. Kept unlayered so they keep
+   priority over Astryx's layered base/theme rules. */
+@import '../styles.css';
+
+/* Matcha Atelier homepage + shared storefront chrome. */
+@import './matcha.css';

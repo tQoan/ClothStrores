@@ -1,0 +1,973 @@
+<!DOCTYPE html>
+
+<html class="h-full bg-surface text-on-surface antialiased" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Giỏ Hàng &amp; Thanh Toán | Matcha Atelier</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "secondary-fixed": "#dbe6d9",
+            "on-error-container": "#93000a",
+            "tertiary": "#486044",
+            "outline": "#737970",
+            "on-tertiary-container": "#eaffe3",
+            "on-primary-fixed": "#062107",
+            "primary-container": "#5c7a58",
+            "on-surface": "#191c1b",
+            "surface-tint": "#486645",
+            "on-secondary-container": "#5d675d",
+            "error": "#ba1a1a",
+            "secondary": "#576157",
+            "primary-fixed": "#caecc3",
+            "inverse-surface": "#2e312f",
+            "on-primary-container": "#eaffe3",
+            "primary": "#446141",
+            "surface": "#f8faf7",
+            "surface-container-high": "#e7e9e6",
+            "on-secondary": "#ffffff",
+            "tertiary-fixed": "#ceeac7",
+            "on-tertiary-fixed-variant": "#354d32",
+            "on-tertiary-fixed": "#0a200a",
+            "secondary-container": "#dbe6d9",
+            "on-error": "#ffffff",
+            "inverse-on-surface": "#eff1ee",
+            "surface-dim": "#d8dbd8",
+            "surface-bright": "#f8faf7",
+            "surface-container": "#eceeeb",
+            "surface-container-highest": "#e1e3e0",
+            "surface-variant": "#e1e3e0",
+            "primary-fixed-dim": "#aecfa8",
+            "tertiary-fixed-dim": "#b2ceac",
+            "on-secondary-fixed": "#141e16",
+            "secondary-fixed-dim": "#bfc9bd",
+            "error-container": "#ffdad6",
+            "on-background": "#191c1b",
+            "outline-variant": "#c3c8be",
+            "on-tertiary": "#ffffff",
+            "surface-container-low": "#f2f4f1",
+            "on-surface-variant": "#434840",
+            "on-primary": "#ffffff",
+            "surface-container-lowest": "#ffffff",
+            "background": "#f8faf7",
+            "tertiary-container": "#60795b",
+            "inverse-primary": "#aecfa8",
+            "on-secondary-fixed-variant": "#3f4940",
+            "on-primary-fixed-variant": "#314d2f"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-2xl": "4rem",
+            "space-md": "1rem",
+            "space-xl": "2.5rem",
+            "gutter": "1.5rem",
+            "space-lg": "1.5rem",
+            "space-sm": "0.5rem",
+            "space-xs": "0.25rem",
+            "gutter-mobile": "1rem",
+            "margin": "4rem",
+            "margin-mobile": "1.25rem",
+            "space-3xl": "6rem"
+          },
+          "fontFamily": {
+            "headline-lg-mobile": ["Playfair Display"],
+            "body-lg": ["Plus Jakarta Sans"],
+            "title-editorial": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-interactive": ["Plus Jakarta Sans"],
+            "display-hero-mobile": ["Playfair Display"],
+            "headline-sm": ["Playfair Display"],
+            "display-hero": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"]
+          },
+          "fontSize": {
+            "headline-lg-mobile": ["28px", { "lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "body-lg": ["17px", { "lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400" }],
+            "title-editorial": ["16px", { "lineHeight": "24px", "letterSpacing": "0.08em", "fontWeight": "600" }],
+            "headline-lg": ["40px", { "lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400" }],
+            "label-caps": ["11px", { "lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600" }],
+            "headline-md": ["26px", { "lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "500" }],
+            "body-md": ["15px", { "lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400" }],
+            "label-interactive": ["14px", { "lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500" }],
+            "display-hero-mobile": ["36px", { "lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400" }],
+            "headline-sm": ["20px", { "lineHeight": "28px", "letterSpacing": "0.005em", "fontWeight": "500" }],
+            "display-hero": ["56px", { "lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400" }],
+            "body-sm": ["13px", { "lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400" }]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 350, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .custom-scroll::-webkit-scrollbar {
+      width: 4px;
+    }
+    .custom-scroll::-webkit-scrollbar-thumb {
+      background-color: #c3c8be;
+      border-radius: 4px;
+    }
+    .fade-out {
+      opacity: 0;
+      transform: scale(0.95);
+      transition: all 0.3s ease-out;
+    }
+  </style>
+</head>
+<body class="min-h-full flex flex-col bg-surface text-on-surface">
+<!-- TOP NAV BAR (Shared Component Execution) -->
+<header class="bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md border-b border-outline-variant/40 dark:border-outline/30 shadow-sm dark:shadow-none docked full-width top-0 sticky z-50 transition-all duration-200 ease-out">
+<div class="w-full max-w-[1440px] mx-auto px-6 md:px-16 flex items-center justify-between h-20">
+<!-- Brand Logo -->
+<a class="text-headline-md font-headline-md tracking-wider text-on-surface dark:text-inverse-on-surface uppercase flex items-center gap-2 group" href="index.html">
+<span class="w-2.5 h-2.5 rounded-full bg-primary inline-block"></span>
+<span>Matcha Atelier</span>
+</a>
+<!-- Navigation Links -->
+<nav class="hidden lg:flex items-center space-x-8 text-label-interactive font-label-interactive">
+<a class="text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="collection.html">Bộ sưu tập mới</a>
+<a class="text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="collection.html#ao">Áo</a>
+<a class="text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="collection.html#dam-vay">Đầm &amp; Váy</a>
+<a class="text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="collection.html#quan">Quần</a>
+<a class="text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="collection.html#phu-kien">Phụ kiện</a>
+<a class="text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200" href="index.html#cau-chuyen">Câu chuyện thương hiệu</a>
+</nav>
+<!-- Trailing Actions & Search -->
+<div class="flex items-center space-x-6">
+<!-- Search bar on right -->
+<div class="hidden md:flex items-center border border-outline-variant rounded-xl bg-surface-container-low px-3 py-1.5 focus-within:border-primary transition-colors">
+<span class="material-symbols-outlined text-outline text-[20px] mr-2">search</span>
+<input class="bg-transparent text-body-sm font-body-sm text-on-surface border-none p-0 focus:ring-0 w-36 lg:w-48 placeholder:text-outline" placeholder="Tìm kiếm trang phục..." type="text"/>
+</div>
+<button aria-label="Danh sách yêu thích" class="text-on-surface-variant hover:text-primary transition-colors duration-200 p-1 relative">
+<span class="material-symbols-outlined text-[22px]">favorite</span>
+</button>
+<a aria-label="Giỏ hàng" class="text-primary hover:text-primary-container transition-colors duration-200 p-1 relative flex items-center" href="cart.html">
+<span class="material-symbols-outlined text-[24px]">shopping_bag</span>
+<span class="absolute -top-1 -right-2 bg-primary text-on-primary text-[10px] font-semibold w-4 h-4 rounded-full flex items-center justify-center ring-2 ring-surface" id="header-cart-badge">3</span>
+</a>
+<div class="h-4 w-px bg-outline-variant hidden sm:block"></div>
+<a class="text-label-interactive font-label-interactive text-on-surface hover:text-primary transition-colors duration-200 hidden sm:block" href="#login">
+          Đăng nhập
+        </a>
+<!-- Mobile Menu Button -->
+<button class="lg:hidden p-2 text-on-surface" id="mobile-menu-btn" aria-label="Mở menu">
+<span class="material-symbols-outlined text-2xl">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Navigation Drawer -->
+<div class="hidden lg:hidden border-t border-outline-variant/30 bg-surface-container-lowest px-6 py-4 flex flex-col gap-3 shadow-md" id="mobile-nav-drawer">
+<a class="text-primary font-label-interactive text-label-interactive py-1" href="collection.html">Bộ sưu tập mới</a>
+<a class="text-on-surface font-label-interactive text-label-interactive py-1" href="collection.html#ao">Áo</a>
+<a class="text-on-surface font-label-interactive text-label-interactive py-1" href="collection.html#dam-vay">Đầm &amp; Váy</a>
+<a class="text-on-surface font-label-interactive text-label-interactive py-1" href="collection.html#quan">Quần</a>
+<a class="text-on-surface font-label-interactive text-label-interactive py-1" href="collection.html#phu-kien">Phụ kiện</a>
+<a class="text-on-surface font-label-interactive text-label-interactive py-1" href="index.html#cau-chuyen">Câu chuyện thương hiệu</a>
+<div class="pt-2 border-t border-outline-variant/30 flex justify-between items-center">
+<a class="text-primary font-label-interactive text-label-interactive" href="#login">Đăng nhập tài khoản</a>
+</div>
+</div>
+</header>
+<!-- MAIN CANVAS -->
+<main class="flex-grow w-full max-w-[1440px] mx-auto px-6 md:px-16 pt-8 pb-24">
+<!-- STEP INDICATOR / BREADCRUMB (Order Progress) -->
+<section class="mb-12">
+<div class="flex flex-col md:flex-row md:items-center justify-between pb-6 border-b border-outline-variant/60 gap-4">
+<div>
+<span class="text-label-caps font-label-caps uppercase text-primary tracking-widest block mb-1">Thủ tục đặt may &amp; mua hàng</span>
+<h1 class="text-headline-lg font-headline-lg text-on-surface">Giỏ Hàng &amp; Thanh Toán</h1>
+</div>
+<!-- 3 Steps -->
+<nav aria-label="Tiến trình đặt hàng" class="flex items-center space-x-3 text-label-interactive font-label-interactive">
+<div class="flex items-center space-x-2 text-primary">
+<span class="w-6 h-6 rounded-full bg-secondary-container text-primary flex items-center justify-center text-xs font-semibold">
+<span class="material-symbols-outlined text-[14px]">check</span>
+</span>
+<span class="font-semibold">1. Giỏ hàng</span>
+</div>
+<span class="w-8 h-px bg-outline-variant"></span>
+<div class="flex items-center space-x-2 text-on-surface font-semibold">
+<span class="w-6 h-6 rounded-full bg-primary text-on-primary flex items-center justify-center text-xs font-semibold">2</span>
+<span class="text-on-surface">2. Giao hàng &amp; Thanh toán</span>
+</div>
+<span class="w-8 h-px bg-outline-variant"></span>
+<div class="flex items-center space-x-2 text-outline">
+<span class="w-6 h-6 rounded-full bg-surface-container-high text-outline flex items-center justify-center text-xs font-medium">3</span>
+<span>3. Xác nhận</span>
+</div>
+</nav>
+</div>
+</section>
+<!-- 2-COLUMN RATIO LAYOUT (65/35 Golden Proportion) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-start">
+<!-- LEFT COLUMN: CART ITEMS + SHIPPING + PAYMENT (Col 7 / 60-65%) -->
+<div class="lg:col-span-7 xl:col-span-7 space-y-10">
+<!-- SECTION A: CART ITEM LIST -->
+<section class="bg-surface-container-lowest border border-outline-variant/60 rounded-xl p-6 md:p-8" id="cart-section">
+<div class="flex items-center justify-between pb-4 border-b border-outline-variant/40 mb-6">
+<h2 class="text-headline-sm font-headline-sm text-on-surface flex items-center gap-2">
+<span>Sản phẩm trong giỏ hàng</span>
+<span class="text-label-caps font-label-caps bg-surface-container px-2.5 py-0.5 rounded-full text-secondary" id="cart-item-count">3 món</span>
+</h2>
+<a class="text-label-interactive font-label-interactive text-primary hover:underline underline-offset-4 flex items-center gap-1" href="collection.html">
+<span>Tiếp tục chọn thêm</span>
+<span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- Free Shipping & Tote Notification Banner -->
+<div class="mb-6 p-4 rounded-xl bg-[#ebf1eb] border border-secondary-fixed flex items-start gap-3.5">
+<span class="material-symbols-outlined text-primary text-[22px] mt-0.5">eco</span>
+<div class="text-body-sm font-body-sm text-on-surface">
+<span class="font-semibold text-primary">Ưu đãi sinh thái đặc quyền:</span>
+              Đơn hàng của bạn đủ điều kiện <strong class="font-semibold">Miễn phí vận chuyển toàn quốc</strong> &amp; được tặng kèm <strong class="font-semibold">Túi vải Tote Matcha Atelier</strong> dệt từ sợi tái chế.
+            </div>
+</div>
+<!-- Product Item List -->
+<div class="space-y-6 divide-y divide-outline-variant/40" id="cart-items-wrapper">
+<!-- Item 1 -->
+<div class="pt-6 first:pt-0 flex flex-col sm:flex-row gap-5 cart-item" data-price="1250000" id="cart-item-1">
+<div class="w-24 h-32 flex-shrink-0 bg-surface-container-low rounded-lg overflow-hidden border border-outline-variant/50 relative">
+<a href="product.html">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="A refined, minimalist organic linen dress in deep matcha sage green hanging against a softly lit warm off-white studio wall with gentle morning shadows." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAGkOXkEAXzZ4q8oPZT3wBx52-Kanh5GdH-T8ed6pQRV7Im7lJYaTt4wVpcH43vgoV7qBNs4Vu1PcyGikVpV14P5-aJjrZC4jgaAtro7ryVkeR4wA2_LA1pjjAz-w6WFVUgo0lYIdRtJRE2tGvmffQLTcr4uXRfOxbYRZRxdOqeNXWinwRggam7wOL5dEVnvcj5ecnBWfwMNGVgEM4W_LYfz3q6PTnfhQNvcUMyXEMQ"/>
+</a>
+<span class="absolute top-1.5 left-1.5 text-[9px] font-semibold tracking-wider uppercase px-1.5 py-0.5 bg-surface/85 backdrop-blur-md rounded text-primary">Linen</span>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div class="flex justify-between items-start gap-4">
+<div>
+<h3 class="text-title-editorial font-title-editorial text-on-surface text-base hover:text-primary transition-colors">
+<a href="product.html">Đầm Linen Dáng Suông Matcha Sage</a>
+</h3>
+<div class="flex flex-wrap gap-x-4 gap-y-1 mt-1 text-body-sm font-body-sm text-outline">
+<span>Màu: <strong class="text-on-surface font-medium">Xanh Matcha Đậm</strong></span>
+<span>•</span>
+<span>Kích cỡ: <strong class="text-on-surface font-medium">M</strong></span>
+<span>•</span>
+<span>Chất liệu: <strong class="text-on-surface font-medium">100% Organic Linen</strong></span>
+</div>
+</div>
+<span class="text-body-md font-body-md font-semibold text-on-surface whitespace-nowrap item-subtotal">1.250.000₫</span>
+</div>
+<div class="flex items-center justify-between mt-4 pt-3 border-t border-dashed border-outline-variant/40">
+<!-- Quantity Control -->
+<div class="flex items-center border border-outline-variant rounded-lg bg-surface-container-lowest overflow-hidden">
+<button aria-label="Giảm số lượng" class="w-8 h-8 flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors btn-decrease">-</button>
+<span class="w-10 text-center text-body-sm font-body-sm font-medium text-on-surface item-qty">1</span>
+<button aria-label="Tăng số lượng" class="w-8 h-8 flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors btn-increase">+</button>
+</div>
+<!-- Actions -->
+<div class="flex items-center space-x-4 text-body-sm font-body-sm">
+<button class="flex items-center gap-1 text-outline hover:text-primary transition-colors btn-wishlist">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+<span class="hidden sm:inline">Lưu yêu thích</span>
+</button>
+<span class="text-outline-variant">|</span>
+<button class="flex items-center gap-1 text-outline hover:text-error transition-colors btn-remove" data-target="cart-item-1">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span>Xóa</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 2 -->
+<div class="pt-6 flex flex-col sm:flex-row gap-5 cart-item" data-price="890000" id="cart-item-2">
+<div class="w-24 h-32 flex-shrink-0 bg-surface-container-low rounded-lg overflow-hidden border border-outline-variant/50 relative">
+<a href="product.html">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="An elegant ivory raw silk shirt featuring delicate natural wooden buttons placed over a minimalist textured wooden display surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOtJF3lU01HgFKLvOSr-eR0o4gY6PeYFjkvjhlVNgDw62yT1pn1MPdRt3Sa7MlRIz9NFmgky4-nkc0uII1nibwokbv80FVRqSkW3OTfLvQ1JqX_-K0I1nCOpH8t4WhJoynTf5rh0sF9e-r8Br4azIm6wvUXBg1iAvKt6cwqto2tBBR6b-kK8dQU1EK7-zoG-T-aGoV_r15gnRG8oSgEFimc_6wLo2J5m6W3t_cROtW"/>
+</a>
+<span class="absolute top-1.5 left-1.5 text-[9px] font-semibold tracking-wider uppercase px-1.5 py-0.5 bg-surface/85 backdrop-blur-md rounded text-primary">Silk</span>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div class="flex justify-between items-start gap-4">
+<div>
+<h3 class="text-title-editorial font-title-editorial text-on-surface text-base hover:text-primary transition-colors">
+<a href="product.html">Áo Sơ Mi Lụa Mộc Ivory Khuy Gỗ</a>
+</h3>
+<div class="flex flex-wrap gap-x-4 gap-y-1 mt-1 text-body-sm font-body-sm text-outline">
+<span>Màu: <strong class="text-on-surface font-medium">Trắng Tinh Khôi</strong></span>
+<span>•</span>
+<span>Kích cỡ: <strong class="text-on-surface font-medium">S</strong></span>
+<span>•</span>
+<span>Chất liệu: <strong class="text-on-surface font-medium">Lụa tơ tằm thiên nhiên</strong></span>
+</div>
+</div>
+<span class="text-body-md font-body-md font-semibold text-on-surface whitespace-nowrap item-subtotal">890.000₫</span>
+</div>
+<div class="flex items-center justify-between mt-4 pt-3 border-t border-dashed border-outline-variant/40">
+<div class="flex items-center border border-outline-variant rounded-lg bg-surface-container-lowest overflow-hidden">
+<button aria-label="Giảm số lượng" class="w-8 h-8 flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors btn-decrease">-</button>
+<span class="w-10 text-center text-body-sm font-body-sm font-medium text-on-surface item-qty">1</span>
+<button aria-label="Tăng số lượng" class="w-8 h-8 flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors btn-increase">+</button>
+</div>
+<div class="flex items-center space-x-4 text-body-sm font-body-sm">
+<button class="flex items-center gap-1 text-outline hover:text-primary transition-colors btn-wishlist">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+<span class="hidden sm:inline">Lưu yêu thích</span>
+</button>
+<span class="text-outline-variant">|</span>
+<button class="flex items-center gap-1 text-outline hover:text-error transition-colors btn-remove" data-target="cart-item-2">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span>Xóa</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<!-- Item 3 -->
+<div class="pt-6 flex flex-col sm:flex-row gap-5 cart-item" data-price="920000" id="cart-item-3">
+<div class="w-24 h-32 flex-shrink-0 bg-surface-container-low rounded-lg overflow-hidden border border-outline-variant/50 relative">
+<a href="product.html">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-300" data-alt="Wide leg tailored pleat trousers in subtle sage green organic linen carefully draped across a low ceramic bench next to a potted bonsai." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBUN2cJbBds7Xl7CEkR0ilK4Yb--CbRra3Kzwt2uye2olAp1BppI0Nm9_hMNHFqtI25tRhrlylm8rtjh2RgoNR11qzhLzAkRAlVgxZVKOt8bP6AOgtWxhMnpX96UvegmvxhnxUgoMGv7S9NJ31LT9iLep67LxqRBasdEM3PQLHGSwcg7WX5uOvTWybYAcQdJ1L9Wsm6i4S8hlaArx3Y9misogV8e0GVx0fOSBEonZHd"/>
+</a>
+<span class="absolute top-1.5 left-1.5 text-[9px] font-semibold tracking-wider uppercase px-1.5 py-0.5 bg-surface/85 backdrop-blur-md rounded text-primary">Linen</span>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div class="flex justify-between items-start gap-4">
+<div>
+<h3 class="text-title-editorial font-title-editorial text-on-surface text-base hover:text-primary transition-colors">
+<a href="product.html">Quần Ống Rộng Xếp Ly Sage Green</a>
+</h3>
+<div class="flex flex-wrap gap-x-4 gap-y-1 mt-1 text-body-sm font-body-sm text-outline">
+<span>Màu: <strong class="text-on-surface font-medium">Xanh Sage</strong></span>
+<span>•</span>
+<span>Kích cỡ: <strong class="text-on-surface font-medium">M</strong></span>
+<span>•</span>
+<span>Chất liệu: <strong class="text-on-surface font-medium">100% Organic Linen</strong></span>
+</div>
+</div>
+<span class="text-body-md font-body-md font-semibold text-on-surface whitespace-nowrap item-subtotal">920.000₫</span>
+</div>
+<div class="flex items-center justify-between mt-4 pt-3 border-t border-dashed border-outline-variant/40">
+<div class="flex items-center border border-outline-variant rounded-lg bg-surface-container-lowest overflow-hidden">
+<button aria-label="Giảm số lượng" class="w-8 h-8 flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors btn-decrease">-</button>
+<span class="w-10 text-center text-body-sm font-body-sm font-medium text-on-surface item-qty">1</span>
+<button aria-label="Tăng số lượng" class="w-8 h-8 flex items-center justify-center text-outline hover:text-on-surface hover:bg-surface-container transition-colors btn-increase">+</button>
+</div>
+<div class="flex items-center space-x-4 text-body-sm font-body-sm">
+<button class="flex items-center gap-1 text-outline hover:text-primary transition-colors btn-wishlist">
+<span class="material-symbols-outlined text-[18px]">favorite</span>
+<span class="hidden sm:inline">Lưu yêu thích</span>
+</button>
+<span class="text-outline-variant">|</span>
+<button class="flex items-center gap-1 text-outline hover:text-error transition-colors btn-remove" data-target="cart-item-3">
+<span class="material-symbols-outlined text-[18px]">delete</span>
+<span>Xóa</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SECTION B: SHIPPING INFORMATION -->
+<section class="bg-surface-container-lowest border border-outline-variant/60 rounded-xl p-6 md:p-8">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between pb-4 border-b border-outline-variant/40 mb-6 gap-2">
+<div>
+<h2 class="text-headline-sm font-headline-sm text-on-surface">Thông tin giao hàng</h2>
+<p class="text-body-sm font-body-sm text-outline mt-0.5">Vui lòng điền địa chỉ để nhận kiện hàng đóng gói thủ công chuẩn Atelier</p>
+</div>
+<!-- Member login prompt -->
+<div class="text-body-sm font-body-sm text-outline">
+              Đã có tài khoản? <a class="text-primary font-semibold hover:underline" href="#login">Đăng nhập</a>
+</div>
+</div>
+<form class="space-y-5" id="shipping-form">
+<!-- Full Name & Phone -->
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+<div>
+<label class="block text-label-interactive font-label-interactive text-on-surface mb-1.5" for="full_name">Họ và tên người nhận <span class="text-error">*</span></label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-low border border-outline-variant text-body-md font-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors" id="full_name" required="" type="text" value="Nguyễn Hoàng Mai Khanh"/>
+</div>
+<div>
+<label class="block text-label-interactive font-label-interactive text-on-surface mb-1.5" for="phone">Số điện thoại <span class="text-error">*</span></label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-low border border-outline-variant text-body-md font-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors" id="phone" required="" type="tel" value="0918 345 678"/>
+</div>
+</div>
+<!-- Email for invoice -->
+<div>
+<label class="block text-label-interactive font-label-interactive text-on-surface mb-1.5" for="email">Email nhận hóa đơn &amp; cập nhật đơn hàng <span class="text-error">*</span></label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-low border border-outline-variant text-body-md font-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors" id="email" required="" type="email" value="maikhanh.atelier@gmail.com"/>
+</div>
+<!-- Address selects -->
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+<div>
+<label class="block text-label-interactive font-label-interactive text-on-surface mb-1.5" for="city">Tỉnh / Thành phố <span class="text-error">*</span></label>
+<select class="w-full h-12 px-4 rounded-xl bg-surface-container-low border border-outline-variant text-body-md font-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors cursor-pointer" id="city">
+<option selected="">TP. Hồ Chí Minh</option>
+<option>Hà Nội</option>
+<option>Đà Nẵng</option>
+<option>Cần Thơ</option>
+</select>
+</div>
+<div>
+<label class="block text-label-interactive font-label-interactive text-on-surface mb-1.5" for="district">Quận / Huyện <span class="text-error">*</span></label>
+<select class="w-full h-12 px-4 rounded-xl bg-surface-container-low border border-outline-variant text-body-md font-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors cursor-pointer" id="district">
+<option selected="">Quận 1</option>
+<option>Quận 3</option>
+<option>TP. Thủ Đức</option>
+<option>Quận Bình Thạnh</option>
+</select>
+</div>
+<div>
+<label class="block text-label-interactive font-label-interactive text-on-surface mb-1.5" for="ward">Phường / Xã <span class="text-error">*</span></label>
+<select class="w-full h-12 px-4 rounded-xl bg-surface-container-low border border-outline-variant text-body-md font-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors cursor-pointer" id="ward">
+<option selected="">Phường Bến Nghé</option>
+<option>Phường Đa Kao</option>
+<option>Phường Tân Định</option>
+</select>
+</div>
+</div>
+<!-- Specific street address -->
+<div>
+<label class="block text-label-interactive font-label-interactive text-on-surface mb-1.5" for="address_detail">Địa chỉ cụ thể (Số nhà, tên đường, tòa nhà) <span class="text-error">*</span></label>
+<input class="w-full h-12 px-4 rounded-xl bg-surface-container-low border border-outline-variant text-body-md font-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors" id="address_detail" required="" type="text" value="Căn hộ 12B, Toà nhà Green Heritage, 24 Đường Lê Thánh Tôn"/>
+</div>
+<!-- Note / Furoshiki gift option -->
+<div>
+<label class="block text-label-interactive font-label-interactive text-on-surface mb-1.5" for="order_notes">Ghi chú đơn hàng &amp; yêu cầu gói quà</label>
+<textarea class="w-full p-4 rounded-xl bg-surface-container-low border border-outline-variant text-body-md font-body-md text-on-surface focus:border-primary focus:ring-0 transition-colors resize-none" id="order_notes" placeholder="Ví dụ: Xin đóng gói hộp quà tặng sinh thái Furoshiki bằng vải lanh, đính kèm thiệp chúc mừng..." rows="2"></textarea>
+</div>
+<div class="flex items-center gap-3 pt-2">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-primary border-outline cursor-pointer" id="save_address" type="checkbox"/>
+<label class="text-body-sm font-body-sm text-outline cursor-pointer select-none" for="save_address">Lưu thông tin này cho lần thanh toán sau</label>
+</div>
+</form>
+</section>
+<!-- SECTION C: SHIPPING METHODS -->
+<section class="bg-surface-container-lowest border border-outline-variant/60 rounded-xl p-6 md:p-8">
+<h2 class="text-headline-sm font-headline-sm text-on-surface mb-2">Phương thức vận chuyển</h2>
+<p class="text-body-sm font-body-sm text-outline mb-6">Mỗi gói hàng được bọc giấy sáp tái sinh và niêm phong dấu sáp thực vật thân thiện môi trường</p>
+<div class="space-y-3">
+<!-- Standard Option -->
+<label class="relative flex items-center justify-between p-4 rounded-xl border border-primary bg-secondary-container/30 cursor-pointer transition-all shipping-option" id="shipping-standard-label">
+<div class="flex items-center gap-3.5">
+<input checked="" class="text-primary focus:ring-primary border-primary cursor-pointer" name="shipping_method" type="radio" value="0"/>
+<div>
+<div class="flex items-center gap-2">
+<span class="text-body-md font-body-md font-semibold text-on-surface">Giao hàng tiêu chuẩn sinh thái</span>
+<span class="px-2 py-0.5 rounded text-[10px] uppercase font-bold bg-primary text-on-primary">Phổ biến</span>
+</div>
+<p class="text-body-sm font-body-sm text-outline mt-0.5">Thời gian dự kiến: 2 - 3 ngày làm việc (Đóng gói túi vải lanh Atelier)</p>
+</div>
+</div>
+<span class="text-body-md font-body-md font-bold text-primary">Miễn phí</span>
+</label>
+<!-- Express Option -->
+<label class="relative flex items-center justify-between p-4 rounded-xl border border-outline-variant hover:border-primary/60 bg-surface-container-lowest cursor-pointer transition-all shipping-option" id="shipping-express-label">
+<div class="flex items-center gap-3.5">
+<input class="text-primary focus:ring-primary border-outline cursor-pointer" name="shipping_method" type="radio" value="35000"/>
+<div>
+<div class="flex items-center gap-2">
+<span class="text-body-md font-body-md font-medium text-on-surface">Giao hàng hỏa tốc nội thành 2H</span>
+<span class="material-symbols-outlined text-[16px] text-tertiary">bolt</span>
+</div>
+<p class="text-body-sm font-body-sm text-outline mt-0.5">Nhận ngay trong ngày • Đóng gói hộp giấy ép tái chế cao cấp</p>
+</div>
+</div>
+<span class="text-body-md font-body-md font-semibold text-on-surface">35.000₫</span>
+</label>
+</div>
+</section>
+<!-- SECTION D: PAYMENT METHODS -->
+<section class="bg-surface-container-lowest border border-outline-variant/60 rounded-xl p-6 md:p-8">
+<h2 class="text-headline-sm font-headline-sm text-on-surface mb-2">Phương thức thanh toán</h2>
+<p class="text-body-sm font-body-sm text-outline mb-6">Mọi giao dịch đều được mã hóa chuẩn chứng chỉ ngân hàng an toàn 256-bit</p>
+<div class="space-y-4">
+<!-- Method 1: VietQR / MoMo (Recommended) -->
+<div class="border border-primary rounded-xl p-5 bg-[#ebf1eb]/40 payment-box" id="box-qr">
+<label class="flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-3.5">
+<input checked="" class="text-primary focus:ring-primary border-primary cursor-pointer payment-radio" name="payment_method" type="radio" value="qr"/>
+<div>
+<div class="flex items-center gap-2">
+<span class="text-body-md font-body-md font-semibold text-on-surface">Chuyển khoản VietQR / Ví MoMo</span>
+<span class="px-2 py-0.5 rounded text-[10px] font-bold bg-primary-container text-on-primary">Khuyên dùng</span>
+</div>
+<span class="text-body-sm font-body-sm text-outline block">Quét mã QR tiện lợi qua ứng dụng mọi ngân hàng tại Việt Nam</span>
+</div>
+</div>
+<div class="flex items-center gap-1 text-primary">
+<span class="material-symbols-outlined text-[24px]">qr_code_scanner</span>
+</div>
+</label>
+<!-- VietQR Expandable Content -->
+<div class="mt-4 pt-4 border-t border-secondary-fixed flex flex-col sm:flex-row items-center gap-4 bg-surface-container-lowest/80 p-4 rounded-lg" id="qr-details">
+<div class="w-24 h-24 bg-white p-2 border border-outline-variant rounded flex-shrink-0 flex items-center justify-center text-center">
+<span class="material-symbols-outlined text-4xl text-primary">qr_code_2</span>
+</div>
+<div class="text-body-sm font-body-sm text-outline space-y-1">
+<p class="font-medium text-on-surface">Mã QR cá nhân hóa sẽ được tạo tự động sau khi bấm "Hoàn tất đặt hàng".</p>
+<p>Hệ thống tự động kích hoạt xác nhận thanh toán chỉ sau 10 giây không cần gửi ảnh biên lai.</p>
+</div>
+</div>
+</div>
+<!-- Method 2: Credit / Debit Card -->
+<div class="border border-outline-variant rounded-xl p-5 hover:border-outline transition-colors payment-box" id="box-card">
+<label class="flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-3.5">
+<input class="text-primary focus:ring-primary border-outline cursor-pointer payment-radio" name="payment_method" type="radio" value="card"/>
+<div>
+<span class="text-body-md font-body-md font-medium text-on-surface block">Thẻ tín dụng / Ghi nợ quốc tế</span>
+<span class="text-body-sm font-body-sm text-outline">Visa, Mastercard, JCB, American Express</span>
+</div>
+</div>
+<div class="flex items-center space-x-1.5 text-outline">
+<span class="material-symbols-outlined text-[22px]">credit_card</span>
+<span class="material-symbols-outlined text-[22px]">lock</span>
+</div>
+</label>
+</div>
+<!-- Method 3: COD -->
+<div class="border border-outline-variant rounded-xl p-5 hover:border-outline transition-colors payment-box" id="box-cod">
+<label class="flex items-center justify-between cursor-pointer">
+<div class="flex items-center gap-3.5">
+<input class="text-primary focus:ring-primary border-outline cursor-pointer payment-radio" name="payment_method" type="radio" value="cod"/>
+<div>
+<span class="text-body-md font-body-md font-medium text-on-surface block">Thanh toán khi nhận hàng (COD)</span>
+<span class="text-body-sm font-body-sm text-outline">Kiểm tra vải và đường may trước khi thanh toán tiền mặt</span>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[22px]">local_shipping</span>
+</label>
+</div>
+</div>
+</section>
+</div>
+<!-- RIGHT COLUMN: STICKY ORDER SUMMARY (Col 5 / 35-40%) -->
+<aside class="lg:col-span-5 xl:col-span-5 sticky top-28 space-y-6">
+<!-- Summary Box -->
+<div class="bg-surface-container-lowest border border-outline-variant/70 rounded-xl p-6 md:p-8 shadow-sm">
+<h2 class="text-headline-sm font-headline-sm text-on-surface pb-4 border-b border-outline-variant/50" id="summary-header">
+            Tóm tắt đơn hàng (3 sản phẩm)
+          </h2>
+<!-- Voucher Code Input -->
+<div class="py-5 border-b border-outline-variant/40">
+<label class="block text-label-interactive font-label-interactive text-on-surface mb-2" for="coupon_code">
+              Mã ưu đãi / Phiếu quà tặng
+            </label>
+<div class="flex gap-2">
+<div class="relative flex-grow">
+<span class="material-symbols-outlined absolute left-3 top-3 text-outline text-[20px]">sell</span>
+<input class="w-full h-11 pl-10 pr-3 rounded-lg bg-surface-container-low border border-outline-variant uppercase text-body-sm font-body-sm font-semibold tracking-wider text-on-surface focus:border-primary focus:ring-0" id="coupon_code" placeholder="NHẬP MÃ..." type="text" value="MATCHA10"/>
+</div>
+<button class="px-5 h-11 bg-primary text-on-primary rounded-lg text-label-interactive font-label-interactive hover:bg-primary-container transition-colors whitespace-nowrap" id="btn-apply-coupon" type="button">
+                Áp dụng
+              </button>
+</div>
+<!-- Applied coupon pill -->
+<div class="mt-3 flex items-center justify-between p-2.5 rounded-lg bg-[#ebf1eb] text-primary text-body-sm font-body-sm" id="coupon-pill">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+<span>Mã <strong id="coupon-label">MATCHA10</strong>: Giảm 10% khách hàng mới</span>
+</div>
+<button class="text-outline hover:text-error text-xs font-semibold uppercase cursor-pointer" id="btn-remove-coupon">Gỡ</button>
+</div>
+</div>
+<!-- Price Calculation Rows -->
+<div class="py-5 space-y-3.5 text-body-md font-body-md border-b border-outline-variant/50">
+<div class="flex justify-between text-outline">
+<span>Tạm tính (<span id="calc-item-count">3 sản phẩm</span>)</span>
+<span class="text-on-surface font-medium" id="calc-subtotal">3.060.000₫</span>
+</div>
+<div class="flex justify-between text-primary" id="discount-row">
+<span class="flex items-center gap-1">
+<span>Ưu đãi thành viên (<span id="discount-code-tag">MATCHA10</span>)</span>
+</span>
+<span class="font-semibold" id="calc-discount">-306.000₫</span>
+</div>
+<div class="flex justify-between text-outline">
+<div class="flex items-center gap-1">
+<span>Phí vận chuyển toàn quốc</span>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Đơn hàng trên 1.000.000₫ miễn phí giao hàng">help_outline</span>
+</div>
+<span class="text-primary font-medium" id="calc-shipping">Miễn phí (0₫)</span>
+</div>
+<div class="flex justify-between text-outline">
+<span>Hộp quà đóng gói sinh thái</span>
+<span class="text-primary font-medium">Miễn phí (Tặng kèm)</span>
+</div>
+</div>
+<!-- Total Calculation -->
+<div class="pt-5 pb-6">
+<div class="flex justify-between items-baseline mb-1">
+<span class="text-title-editorial font-title-editorial text-on-surface font-semibold text-lg">Tổng thanh toán:</span>
+<span class="text-headline-md font-headline-md text-primary font-bold" id="calc-total">2.754.000₫</span>
+</div>
+<p class="text-right text-[12px] text-outline font-body-sm">Đã bao gồm thuế GTGT (VAT) và phí bảo hiểm hàng hóa</p>
+</div>
+<!-- Main Call to Action Button -->
+<button class="w-full py-4 px-6 bg-primary text-on-primary rounded-xl font-label-interactive text-label-interactive font-semibold hover:bg-primary-container hover:shadow-lg transition-all duration-200 flex items-center justify-center gap-2 group cursor-pointer" id="btn-checkout" type="button">
+<span>Hoàn tất đặt hàng &amp; Thanh toán</span>
+<span class="material-symbols-outlined text-[20px] group-hover:translate-x-1 transition-transform">arrow_forward</span>
+</button>
+<p class="text-center text-xs text-outline font-body-sm mt-3.5">
+            Bằng việc nhấn đặt hàng, bạn đồng ý với <a class="underline hover:text-primary" href="#">Điều khoản dịch vụ</a> của Matcha Atelier.
+          </p>
+</div>
+<!-- Trust Badges & Guarantee Panel -->
+<div class="bg-surface-container-low border border-outline-variant/40 rounded-xl p-5 space-y-4">
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">verified_user</span>
+<div>
+<h4 class="text-label-interactive font-label-interactive text-on-surface font-semibold">Bảo mật thanh toán SSL 256-bit</h4>
+<p class="text-body-sm font-body-sm text-outline">Thông tin thẻ và tài khoản ngân hàng được mã hóa tuyệt đối.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">published_with_changes</span>
+<div>
+<h4 class="text-label-interactive font-label-interactive text-on-surface font-semibold">Đổi trả miễn phí 14 ngày</h4>
+<p class="text-body-sm font-body-sm text-outline">Đổi kích cỡ hoặc kiểu dáng tận nhà hoàn toàn miễn cước.</p>
+</div>
+</div>
+<div class="flex items-start gap-3">
+<span class="material-symbols-outlined text-primary text-[20px] mt-0.5">nest_eco_leaf</span>
+<div>
+<h4 class="text-label-interactive font-label-interactive text-on-surface font-semibold">100% Bao bì tự hủy sinh học</h4>
+<p class="text-body-sm font-body-sm text-outline">Cam kết không rác thải nhựa trong toàn bộ chuỗi đóng gói.</p>
+</div>
+</div>
+<div class="pt-3 border-t border-outline-variant/40 flex items-center justify-between text-body-sm font-body-sm">
+<span class="text-outline">Stylist hỗ trợ riêng:</span>
+<a class="font-semibold text-primary hover:underline flex items-center gap-1" href="tel:19006886">
+<span class="material-symbols-outlined text-[16px]">call</span>
+              1900 6886
+            </a>
+</div>
+</div>
+</aside>
+</div>
+</main>
+<!-- ORDER SUCCESS MODAL DIALOG -->
+<div class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/50 backdrop-blur-sm hidden" id="order-success-modal">
+<div class="bg-surface-container-lowest max-w-md w-full rounded-2xl p-6 md:p-8 border border-outline-variant/60 shadow-2xl text-center space-y-5 animate-in fade-in zoom-in duration-200">
+<div class="w-16 h-16 rounded-full bg-secondary-container text-primary mx-auto flex items-center justify-center">
+<span class="material-symbols-outlined text-3xl font-bold">check_circle</span>
+</div>
+<div>
+<span class="text-label-caps font-label-caps uppercase text-primary tracking-widest">ĐẶT HÀNG THÀNH CÔNG</span>
+<h3 class="text-headline-sm font-headline-sm text-on-surface mt-1">Cảm ơn quý khách!</h3>
+<p class="text-body-sm font-body-sm text-outline mt-2 leading-relaxed">
+        Đơn hàng <strong class="text-primary font-semibold">#MA-202588</strong> của bạn đã được tiếp nhận. Chúng tôi sẽ chuẩn bị gói hàng thủ công theo tiêu chuẩn Atelier và gửi thông báo qua email.
+      </p>
+</div>
+<div class="p-4 rounded-xl bg-surface-container-low border border-outline-variant/50 text-left text-body-sm space-y-1.5">
+<div class="flex justify-between">
+<span class="text-outline">Người nhận:</span>
+<span class="font-medium text-on-surface" id="modal-recipient">Nguyễn Hoàng Mai Khanh</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">Số tiền thanh toán:</span>
+<span class="font-semibold text-primary" id="modal-total">2.754.000₫</span>
+</div>
+<div class="flex justify-between">
+<span class="text-outline">Phương thức:</span>
+<span class="font-medium text-on-surface" id="modal-method">VietQR / MoMo</span>
+</div>
+</div>
+<div class="pt-2 flex flex-col gap-2.5">
+<a class="w-full py-3 bg-primary text-on-primary rounded-xl font-label-interactive text-label-interactive font-medium hover:bg-primary-container transition-colors text-center" href="index.html">
+        Về trang chủ Matcha Atelier
+      </a>
+<a class="w-full py-3 border border-outline-variant text-on-surface rounded-xl font-label-interactive text-label-interactive hover:bg-surface-container transition-colors text-center" href="collection.html">
+        Tiếp tục mua sắm
+      </a>
+</div>
+</div>
+</div>
+<!-- FOOTER (Shared Component Execution) -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/50 dark:border-outline/30 docked full-width bottom transition-all duration-200 ease-out">
+<div class="w-full max-w-[1440px] mx-auto px-6 md:px-16 py-16 lg:py-24">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10 pb-12 border-b border-outline-variant/40">
+<!-- Brand Column -->
+<div class="lg:col-span-2 space-y-4">
+<a class="text-headline-lg font-headline-lg text-primary dark:text-inverse-primary tracking-wide block" href="index.html">
+            Matcha Atelier
+          </a>
+<p class="text-body-md font-body-md text-on-surface-variant dark:text-surface-variant max-w-sm">
+            Thương hiệu thời trang may đo và dòng sản phẩm may sẵn từ 100% sợi tự nhiên: Linen thuần khiết, Lụa mộc và Bông hữu cơ. Tôn vinh vẻ đẹp tĩnh tại, bền vững theo năm tháng.
+          </p>
+<div class="pt-2 text-body-sm font-body-sm text-outline">
+            Hotline Atelier: <strong>1900 6886</strong> • Email: <strong>concierge@matcha-atelier.vn</strong>
+</div>
+</div>
+<!-- Links Column 1: Chăm sóc khách hàng -->
+<div class="space-y-3">
+<h4 class="text-label-caps font-label-caps text-on-surface uppercase tracking-wider font-semibold">Chăm sóc khách hàng</h4>
+<ul class="space-y-2.5 text-label-interactive font-label-interactive">
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Hướng dẫn chọn kích cỡ</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Chính sách đổi trả &amp; bảo hành</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Bảo quản chất liệu Linen &amp; Cotton</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Liên hệ &amp; Cửa hàng</a></li>
+</ul>
+</div>
+<!-- Links Column 2: Bền vững & Triết lý -->
+<div class="space-y-3">
+<h4 class="text-label-caps font-label-caps text-on-surface uppercase tracking-wider font-semibold">Về Thương Hiệu</h4>
+<ul class="space-y-2.5 text-label-interactive font-label-interactive">
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Hành trình Organic Cotton</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Nghệ thuật dệt lụa tự nhiên</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Báo cáo thời trang sinh thái</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Tuyển dụng Stylist &amp; Thợ may</a></li>
+</ul>
+</div>
+<!-- Links Column 3: Pháp lý & Bản tin -->
+<div class="space-y-3">
+<h4 class="text-label-caps font-label-caps text-on-surface uppercase tracking-wider font-semibold">Pháp lý &amp; Chính sách</h4>
+<ul class="space-y-2.5 text-label-interactive font-label-interactive">
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Chính sách bảo mật</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">Điều khoản sử dụng</a></li>
+<li><a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors underline underline-offset-4" href="#">Chính sách vận chuyển xanh</a></li>
+</ul>
+</div>
+</div>
+<!-- Copyright & Certified Note -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between text-body-sm font-body-sm text-on-surface-variant dark:text-surface-variant gap-4">
+<div>
+          © 2025 Matcha Atelier. Tất cả quyền được bảo lưu. Tinh hoa thời trang sinh thái &amp; bền vững.
+        </div>
+<div class="flex items-center space-x-6 text-label-interactive font-label-interactive">
+<span>GOTS Certified Organic</span>
+<span>•</span>
+<span>OEKO-TEX® Standard 100</span>
+<span>•</span>
+<span>Hệ sinh thái xanh Việt Nam</span>
+</div>
+</div>
+</div>
+</footer>
+<!-- Interactive Cart & Checkout Script -->
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  let discountRate = 0.10; // 10%
+  let activeCoupon = 'MATCHA10';
+  let shippingCost = 0;
+
+  function formatVND(amount) {
+    return new Intl.NumberFormat('vi-VN').format(amount) + '₫';
+  }
+
+  function recalculateCart() {
+    const items = document.querySelectorAll('.cart-item');
+    let subtotal = 0;
+    let totalQty = 0;
+
+    items.forEach(item => {
+      const price = parseInt(item.getAttribute('data-price')) || 0;
+      const qty = parseInt(item.querySelector('.item-qty').textContent) || 0;
+      const itemSub = price * qty;
+      subtotal += itemSub;
+      totalQty += qty;
+      item.querySelector('.item-subtotal').textContent = formatVND(itemSub);
+    });
+
+    const discountAmount = discountRate > 0 ? Math.round(subtotal * discountRate) : 0;
+    const total = subtotal - discountAmount + shippingCost;
+
+    // Update UI
+    document.getElementById('calc-subtotal').textContent = formatVND(subtotal);
+    document.getElementById('calc-discount').textContent = '-' + formatVND(discountAmount);
+    document.getElementById('calc-shipping').textContent = shippingCost === 0 ? 'Miễn phí (0₫)' : formatVND(shippingCost);
+    document.getElementById('calc-total').textContent = formatVND(total);
+
+    // Update Badges
+    const badge = document.getElementById('header-cart-badge');
+    const headerCount = document.getElementById('cart-item-count');
+    const summaryHeader = document.getElementById('summary-header');
+    const calcCount = document.getElementById('calc-item-count');
+
+    if (badge) badge.textContent = totalQty;
+    if (headerCount) headerCount.textContent = totalQty + ' món';
+    if (summaryHeader) summaryHeader.textContent = `Tóm tắt đơn hàng (${totalQty} sản phẩm)`;
+    if (calcCount) calcCount.textContent = `${totalQty} sản phẩm`;
+
+    // Handle Empty Cart
+    if (items.length === 0) {
+      document.getElementById('cart-items-wrapper').innerHTML = `
+        <div class="py-12 text-center space-y-4">
+          <span class="material-symbols-outlined text-5xl text-outline">shopping_bag</span>
+          <p class="text-body-lg text-outline">Giỏ hàng của bạn đang trống.</p>
+          <a href="collection.html" class="inline-block px-6 py-2.5 bg-primary text-white rounded-xl font-label-interactive text-label-interactive">
+            Khám phá bộ sưu tập
+          </a>
+        </div>
+      `;
+    }
+  }
+
+  // 1. Quantity Adjustments (+ / -)
+  document.querySelectorAll('.cart-item').forEach(item => {
+    const btnDec = item.querySelector('.btn-decrease');
+    const btnInc = item.querySelector('.btn-increase');
+    const qtySpan = item.querySelector('.item-qty');
+
+    btnDec.addEventListener('click', () => {
+      let current = parseInt(qtySpan.textContent) || 1;
+      if (current > 1) {
+        qtySpan.textContent = current - 1;
+        recalculateCart();
+      }
+    });
+
+    btnInc.addEventListener('click', () => {
+      let current = parseInt(qtySpan.textContent) || 1;
+      qtySpan.textContent = current + 1;
+      recalculateCart();
+    });
+  });
+
+  // 2. Remove Items
+  document.querySelectorAll('.btn-remove').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const targetId = btn.getAttribute('data-target');
+      const itemEl = document.getElementById(targetId);
+      if (itemEl) {
+        itemEl.classList.add('fade-out');
+        setTimeout(() => {
+          itemEl.remove();
+          recalculateCart();
+        }, 300);
+      }
+    });
+  });
+
+  // 3. Coupon Application
+  const btnApplyCoupon = document.getElementById('btn-apply-coupon');
+  const btnRemoveCoupon = document.getElementById('btn-remove-coupon');
+  const couponInput = document.getElementById('coupon_code');
+  const couponPill = document.getElementById('coupon-pill');
+  const discountRow = document.getElementById('discount-row');
+
+  btnApplyCoupon.addEventListener('click', () => {
+    const code = couponInput.value.trim().toUpperCase();
+    if (code === 'MATCHA10') {
+      discountRate = 0.10;
+      activeCoupon = code;
+      couponPill.classList.remove('hidden');
+      discountRow.classList.remove('hidden');
+      document.getElementById('coupon-label').textContent = code;
+      document.getElementById('discount-code-tag').textContent = code;
+      recalculateCart();
+    } else if (code.length > 0) {
+      alert('Mã ưu đãi không hợp lệ hoặc đã hết hạn.');
+    }
+  });
+
+  btnRemoveCoupon.addEventListener('click', () => {
+    discountRate = 0;
+    activeCoupon = '';
+    couponInput.value = '';
+    couponPill.classList.add('hidden');
+    discountRow.classList.add('hidden');
+    recalculateCart();
+  });
+
+  // 4. Shipping Option Changes
+  const shippingRadios = document.querySelectorAll('input[name="shipping_method"]');
+  shippingRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      shippingCost = parseInt(radio.value) || 0;
+      document.querySelectorAll('.shipping-option').forEach(label => {
+        label.classList.remove('border-primary', 'bg-secondary-container/30');
+        label.classList.add('border-outline-variant', 'bg-surface-container-lowest');
+      });
+      const selectedLabel = radio.closest('.shipping-option');
+      if (selectedLabel) {
+        selectedLabel.classList.add('border-primary', 'bg-secondary-container/30');
+        selectedLabel.classList.remove('border-outline-variant', 'bg-surface-container-lowest');
+      }
+      recalculateCart();
+    });
+  });
+
+  // 5. Payment Method Switcher
+  const paymentRadios = document.querySelectorAll('.payment-radio');
+  const qrDetails = document.getElementById('qr-details');
+
+  paymentRadios.forEach(radio => {
+    radio.addEventListener('change', () => {
+      document.querySelectorAll('.payment-box').forEach(box => {
+        box.classList.remove('border-primary', 'bg-[#ebf1eb]/40');
+        box.classList.add('border-outline-variant');
+      });
+      const selectedBox = radio.closest('.payment-box');
+      if (selectedBox) {
+        selectedBox.classList.add('border-primary', 'bg-[#ebf1eb]/40');
+        selectedBox.classList.remove('border-outline-variant');
+      }
+      if (radio.value === 'qr') {
+        qrDetails.classList.remove('hidden');
+      } else {
+        qrDetails.classList.add('hidden');
+      }
+    });
+  });
+
+  // 6. Checkout Complete Trigger
+  const btnCheckout = document.getElementById('btn-checkout');
+  const modal = document.getElementById('order-success-modal');
+
+  btnCheckout.addEventListener('click', () => {
+    const fullName = document.getElementById('full_name').value.trim() || 'Quý khách';
+    const totalText = document.getElementById('calc-total').textContent;
+    const selectedPayMethod = document.querySelector('input[name="payment_method"]:checked')?.value;
+
+    let methodName = 'Chuyển khoản VietQR / MoMo';
+    if (selectedPayMethod === 'card') methodName = 'Thẻ tín dụng / Ghi nợ';
+    if (selectedPayMethod === 'cod') methodName = 'Thanh toán khi nhận hàng (COD)';
+
+    document.getElementById('modal-recipient').textContent = fullName;
+    document.getElementById('modal-total').textContent = totalText;
+    document.getElementById('modal-method').textContent = methodName;
+
+    modal.classList.remove('hidden');
+  });
+
+  // 7. Mobile Menu
+  const mobileBtn = document.getElementById('mobile-menu-btn');
+  const mobileDrawer = document.getElementById('mobile-nav-drawer');
+  if (mobileBtn && mobileDrawer) {
+    mobileBtn.addEventListener('click', () => {
+      mobileDrawer.classList.toggle('hidden');
+    });
+  }
+
+  // 8. Wishlist Heart Toggle
+  document.querySelectorAll('.btn-wishlist').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const icon = btn.querySelector('.material-symbols-outlined');
+      if (icon) {
+        icon.classList.toggle('text-primary');
+        btn.classList.toggle('text-primary');
+      }
+    });
+  });
+});
+</script>
+</body></html>

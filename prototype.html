@@ -1,0 +1,924 @@
+<!DOCTYPE html>
+
+<html class="light" lang="vi"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Matcha Atelier — Thời Trang Hữu Cơ &amp; Quiet Luxury</title>
+<!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&amp;family=Plus+Jakarta+Sans:wght@300;400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<!-- Material Symbols Outlined -->
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<!-- Tailwind CSS v3 -->
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          "colors": {
+            "on-background": "#191c1b",
+            "tertiary-container": "#60795b",
+            "tertiary-fixed": "#ceeac7",
+            "on-tertiary-fixed": "#0a200a",
+            "outline": "#737970",
+            "error": "#ba1a1a",
+            "on-tertiary-fixed-variant": "#354d32",
+            "background": "#f8faf7",
+            "on-secondary-fixed-variant": "#3f4940",
+            "surface-container-low": "#f2f4f1",
+            "on-secondary-fixed": "#141e16",
+            "surface-variant": "#e1e3e0",
+            "surface-dim": "#d8dbd8",
+            "primary-container": "#5c7a58",
+            "on-primary-fixed-variant": "#314d2f",
+            "on-error": "#ffffff",
+            "on-error-container": "#93000a",
+            "on-tertiary-container": "#eaffe3",
+            "primary": "#446141",
+            "on-secondary-container": "#5d675d",
+            "on-primary-fixed": "#062107",
+            "error-container": "#ffdad6",
+            "secondary-fixed-dim": "#bfc9bd",
+            "surface": "#f8faf7",
+            "surface-tint": "#486645",
+            "on-primary-container": "#eaffe3",
+            "surface-container-highest": "#e1e3e0",
+            "tertiary-fixed-dim": "#b2ceac",
+            "inverse-primary": "#aecfa8",
+            "secondary-fixed": "#dbe6d9",
+            "surface-container": "#eceeeb",
+            "secondary": "#576157",
+            "primary-fixed": "#caecc3",
+            "tertiary": "#486044",
+            "secondary-container": "#dbe6d9",
+            "surface-container-lowest": "#ffffff",
+            "on-primary": "#ffffff",
+            "outline-variant": "#c3c8be",
+            "surface-container-high": "#e7e9e6",
+            "surface-bright": "#f8faf7",
+            "on-secondary": "#ffffff",
+            "inverse-surface": "#2e312f",
+            "primary-fixed-dim": "#aecfa8",
+            "on-tertiary": "#ffffff",
+            "inverse-on-surface": "#eff1ee",
+            "on-surface": "#191c1b",
+            "on-surface-variant": "#434840"
+          },
+          "borderRadius": {
+            "DEFAULT": "0.125rem",
+            "lg": "0.25rem",
+            "xl": "0.5rem",
+            "full": "0.75rem"
+          },
+          "spacing": {
+            "space-xl": "2.5rem",
+            "space-xs": "0.25rem",
+            "gutter-mobile": "1rem",
+            "gutter": "1.5rem",
+            "space-lg": "1.5rem",
+            "space-3xl": "6rem",
+            "margin-mobile": "1.25rem",
+            "space-md": "1rem",
+            "space-sm": "0.5rem",
+            "margin": "4rem",
+            "space-2xl": "4rem"
+          },
+          "fontFamily": {
+            "body-lg": ["Plus Jakarta Sans"],
+            "headline-sm": ["Playfair Display"],
+            "label-interactive": ["Plus Jakarta Sans"],
+            "headline-lg": ["Playfair Display"],
+            "title-editorial": ["Plus Jakarta Sans"],
+            "display-hero": ["Playfair Display"],
+            "display-hero-mobile": ["Playfair Display"],
+            "body-md": ["Plus Jakarta Sans"],
+            "label-caps": ["Plus Jakarta Sans"],
+            "headline-md": ["Playfair Display"],
+            "body-sm": ["Plus Jakarta Sans"],
+            "headline-lg-mobile": ["Playfair Display"]
+          },
+          "fontSize": {
+            "body-lg": ["17px", {"lineHeight": "28px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+            "headline-sm": ["20px", {"lineHeight": "28px", "letterSpacing": "0.005em", "fontWeight": "500"}],
+            "label-interactive": ["14px", {"lineHeight": "20px", "letterSpacing": "0.02em", "fontWeight": "500"}],
+            "headline-lg": ["40px", {"lineHeight": "48px", "letterSpacing": "-0.015em", "fontWeight": "400"}],
+            "title-editorial": ["16px", {"lineHeight": "24px", "letterSpacing": "0.08em", "fontWeight": "600"}],
+            "display-hero": ["56px", {"lineHeight": "64px", "letterSpacing": "-0.02em", "fontWeight": "400"}],
+            "display-hero-mobile": ["36px", {"lineHeight": "44px", "letterSpacing": "-0.01em", "fontWeight": "400"}],
+            "body-md": ["15px", {"lineHeight": "24px", "letterSpacing": "0em", "fontWeight": "400"}],
+            "label-caps": ["11px", {"lineHeight": "16px", "letterSpacing": "0.12em", "fontWeight": "600"}],
+            "headline-md": ["26px", {"lineHeight": "34px", "letterSpacing": "0em", "fontWeight": "500"}],
+            "body-sm": ["13px", {"lineHeight": "20px", "letterSpacing": "0.01em", "fontWeight": "400"}],
+            "headline-lg-mobile": ["28px", {"lineHeight": "36px", "letterSpacing": "-0.01em", "fontWeight": "400"}]
+          }
+        }
+      }
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+      display: inline-block;
+      vertical-align: middle;
+      line-height: 1;
+    }
+    .material-symbols-outlined.fill-icon {
+      font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    /* Subtle organic Japanese-Scandinavian shadow */
+    .zen-shadow {
+      box-shadow: 0px 16px 40px -12px rgba(68, 97, 65, 0.08), 0px 4px 16px -2px rgba(25, 28, 27, 0.03);
+    }
+    .zen-card-hover {
+      transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .zen-card-hover:hover {
+      transform: translateY(-4px);
+      box-shadow: 0px 20px 48px -12px rgba(68, 97, 65, 0.12);
+    }
+  </style>
+</head>
+<body class="bg-background text-on-surface antialiased selection:bg-secondary-container selection:text-on-secondary-fixed">
+<!-- 1. Top Announcement Bar -->
+<div class="bg-primary text-on-primary border-b border-outline-variant/30 py-2.5 px-4 text-center">
+<div class="max-w-[1440px] mx-auto flex items-center justify-center gap-3">
+<span class="inline-block w-1.5 h-1.5 rounded-full bg-tertiary-fixed animate-pulse"></span>
+<p class="font-body-sm text-body-sm tracking-wide text-white/95">
+        Miễn phí vận chuyển cho đơn hàng từ 500.000đ &nbsp;|&nbsp; Tặng túi tote Matcha Organic cho bộ sưu tập Mùa Xuân
+      </p>
+</div>
+</div>
+<!-- 2. TopNavBar (Shared Component JSON Blueprint & Constraints) -->
+<header class="bg-surface/95 dark:bg-inverse-surface/95 backdrop-blur-md border-b border-outline-variant/40 dark:border-outline/30 shadow-sm dark:shadow-none docked full-width top-0 sticky z-50 transition-all duration-200 ease-out">
+<div class="w-full max-w-[1440px] mx-auto px-6 md:px-16 flex items-center justify-between h-20">
+<!-- Brand Logo -->
+<div class="flex items-center gap-8">
+<a class="text-headline-md font-headline-md tracking-wider text-on-surface dark:text-inverse-on-surface uppercase flex items-center gap-2" href="#">
+          MATCHA ATELIER
+        </a>
+</div>
+<!-- Desktop Navigation Links -->
+<nav class="hidden lg:flex items-center gap-8">
+<a class="text-primary dark:text-inverse-primary border-b-2 border-primary dark:border-inverse-primary pb-1 text-label-interactive font-label-interactive" href="#new">
+          Bộ sưu tập mới
+        </a>
+<a class="text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 text-label-interactive font-label-interactive" href="#ao">
+          Áo
+        </a>
+<a class="text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 text-label-interactive font-label-interactive" href="#dam-vay">
+          Đầm &amp; Váy
+        </a>
+<a class="text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 text-label-interactive font-label-interactive" href="#quan">
+          Quần
+        </a>
+<a class="text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 text-label-interactive font-label-interactive" href="#phu-kien">
+          Phụ kiện
+        </a>
+<a class="text-on-surface-variant dark:text-surface-dim hover:text-primary dark:hover:text-inverse-primary transition-colors duration-200 text-label-interactive font-label-interactive" href="#cau-chuyen">
+          Câu chuyện thương hiệu
+        </a>
+</nav>
+<!-- Trailing Action Cluster -->
+<div class="flex items-center gap-5">
+<!-- Search bar on right -->
+<div class="hidden md:flex items-center relative">
+<input class="h-10 pl-9 pr-4 w-44 lg:w-56 bg-surface-container-low rounded-xl border border-outline-variant/60 font-body-sm text-body-sm text-on-surface focus:outline-none focus:border-primary focus:w-64 transition-all duration-300" placeholder="Tìm kiếm sản phẩm..." type="text"/>
+<span class="material-symbols-outlined absolute left-2.5 text-outline text-[18px]" data-icon="search">search</span>
+</div>
+<!-- Wishlist Icon -->
+<button class="relative p-2 text-on-surface-variant hover:text-primary transition-colors duration-200" title="Yêu thích">
+<span class="material-symbols-outlined text-[22px]" data-icon="favorite">favorite</span>
+<span class="absolute top-1 right-1 w-2 h-2 rounded-full bg-primary-container"></span>
+</button>
+<!-- Shopping Bag Icon with counter badge (2) -->
+<a class="relative p-2 text-on-surface-variant hover:text-primary transition-colors duration-200" title="Giỏ hàng & Thanh toán" href="cart.html">
+<span class="material-symbols-outlined text-[22px]" data-icon="shopping_bag">shopping_bag</span>
+<span class="absolute -top-0.5 -right-0.5 bg-primary text-white font-label-caps text-[10px] w-4 h-4 rounded-full flex items-center justify-center font-bold">2</span>
+</a>
+<!-- Trailing primary action -->
+<a class="hidden sm:inline-flex items-center justify-center font-label-interactive text-label-interactive px-4 py-2 border border-outline-variant/70 rounded-xl text-on-surface hover:border-primary hover:text-primary transition-colors" href="#login">
+          Đăng nhập
+        </a>
+<!-- Mobile Menu Toggle -->
+<button class="lg:hidden p-2 text-on-surface" onclick="document.getElementById('mobileNavDrawer').classList.toggle('hidden')">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+<!-- Mobile Drawer Subnav -->
+<div class="hidden lg:hidden border-t border-outline-variant/30 bg-surface-container-lowest px-6 py-5 flex flex-col gap-4" id="mobileNavDrawer">
+<a class="text-primary font-label-interactive text-label-interactive" href="#new">Bộ sưu tập mới</a>
+<a class="text-on-surface font-label-interactive text-label-interactive" href="#ao">Áo</a>
+<a class="text-on-surface font-label-interactive text-label-interactive" href="#dam-vay">Đầm &amp; Váy</a>
+<a class="text-on-surface font-label-interactive text-label-interactive" href="#quan">Quần</a>
+<a class="text-on-surface font-label-interactive text-label-interactive" href="#phu-kien">Phụ kiện</a>
+<a class="text-on-surface font-label-interactive text-label-interactive" href="#cau-chuyen">Câu chuyện thương hiệu</a>
+<div class="pt-2 border-t border-outline-variant/30 flex justify-between items-center">
+<a class="text-primary font-label-interactive text-label-interactive" href="#login">Đăng nhập tài khoản</a>
+</div>
+</div>
+</header>
+<!-- 3. Hero Section (Editorial Fashion Showcase) -->
+<section class="relative bg-surface overflow-hidden py-12 md:py-20 lg:py-24 border-b border-outline-variant/30">
+<div class="max-w-[1440px] mx-auto px-6 md:px-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Left Editorial Copy (5 cols) -->
+<div class="lg:col-span-5 flex flex-col justify-center space-y-6">
+<div class="flex items-center gap-3">
+<span class="h-px w-8 bg-primary"></span>
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">SPRING / SUMMER 2025 ATELIER</span>
+</div>
+<h1 class="font-display-hero text-headline-lg-mobile md:font-display-hero md:text-display-hero text-on-surface leading-none tracking-tight">
+            Sự Tinh Tế Của <br class="hidden md:inline"/>
+<span class="italic font-normal text-primary">Sắc Xanh</span> Tự Nhiên
+          </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-lg font-light leading-relaxed">
+            BST Xuân Hè 2025 kết hợp giữa triết lý tối giản Japandi và cảm xúc an yên từ lá trà xanh nguyên bản. Từng sợi organic linen và cotton hữu cơ được dệt thủ công, nhẹ nhàng ôm ấp làn da người mặc.
+          </p>
+<!-- CTAs -->
+<div class="flex flex-wrap items-center gap-4 pt-2">
+<a class="inline-flex items-center justify-center font-label-interactive text-label-interactive px-8 py-3.5 bg-primary text-white rounded-xl shadow-sm hover:bg-tertiary transition-all duration-200" href="#collection">
+              Khám Phá Bộ Sưu Tập
+            </a>
+<a class="inline-flex items-center justify-center font-label-interactive text-label-interactive px-7 py-3.5 border border-primary text-on-surface bg-surface-container-lowest rounded-xl hover:bg-secondary-container transition-all duration-200 gap-2" href="#lookbook">
+<span class="material-symbols-outlined text-[18px]" data-icon="visibility">visibility</span>
+              Xem Lookbook
+            </a>
+</div>
+<!-- Proof Metrics -->
+<div class="pt-8 border-t border-outline-variant/40 grid grid-cols-3 gap-4">
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-semibold">100%</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-1">Organic Linen</p>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-semibold">Natural</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-1">Eco-friendly Dye</p>
+</div>
+<div>
+<p class="font-headline-sm text-headline-sm text-primary font-semibold">50.000+</p>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase mt-1">Khách Hàng Tin Chọn</p>
+</div>
+</div>
+</div>
+<!-- Right Asymmetric Image Composition (7 cols) -->
+<div class="lg:col-span-7 relative">
+<div class="relative grid grid-cols-12 gap-4 items-end">
+<!-- Main Hero Portrait Image -->
+<div class="col-span-8 relative">
+<div class="aspect-[3/4] w-full rounded-2xl overflow-hidden bg-surface-container border border-outline-variant/40 zen-shadow">
+<img class="w-full h-full object-cover object-top hover:scale-105 transition-transform duration-700 ease-out" data-alt="Editorial portrait of an elegant woman wearing a soft matcha green tailored linen blazer and an unbleached white silk camisole. The setting is a bright, sunlit minimalist Japandi architectural studio with pale wooden beams and textured plaster walls. The lighting is diffused and luminous, creating soft natural shadows. The overall aesthetic embodies calm quiet luxury and sustainable textile elegance." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCUozWSdvTZ2c9vBcf3YSJWVaXBscv_wH4rRmx_ybHpez_wgP6XodMkYRXavhCEOw9sH88okT5swvw6D2edVtN5MJ3yeREPSFMrOoYG0ah53r4PLNWIv7WQNPPMQryUJyzIsaGa_Q5q4gStmW19tJ0TqmoFfZ60aVQ5qD5TjdtXqffWZ6SPZZ_tkTMz2qpMP6RwwBcBILtd51Q6rQSi73wEmFwutnjxeUIfmq0zmb3d"/>
+</div>
+<div class="absolute bottom-4 left-4 bg-surface-bright/90 backdrop-blur-md px-4 py-2 rounded-xl border border-outline-variant/40">
+<p class="font-label-caps text-label-caps text-primary tracking-widest uppercase">LOOK 01 • MATCHA SUIT</p>
+<p class="font-body-sm text-body-sm text-on-surface font-medium">Linen Matcha &amp; White Mist Silk</p>
+</div>
+</div>
+<!-- Secondary Detail Image Floating -->
+<div class="col-span-4 flex flex-col gap-4">
+<div class="aspect-square w-full rounded-2xl overflow-hidden bg-surface-container border border-outline-variant/40 zen-shadow">
+<img class="w-full h-full object-cover hover:scale-105 transition-transform duration-500" data-alt="Extreme close-up macro texture photograph of unbleached organic linen dyed in subtle matcha leaf green tones. Tactile woven fabric threads are clearly defined in natural daylight with delicate slubs and raw botanical fibers visible. The mood is calm, grounded, and pure organic craft." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCtWSRBz29LgJ8zQwVQPTI-EFfDhmTRRVYD4wO6s5EEvQu4YS5kDY2XW8MgPIr5jR1maOwY-gjwuprhmywHBn2DHzykqm4HHiP0CXq5Te5oQhlzxpw1QepFNJKzHiW0SmJixKgFV6JkGnP7gVgoOAAJ_IAiaCVnyt98VEt4HxqrZrKDmsEeiU7h1FDm5ALDuromZtFsBo0xEzHNYNWvAnkBSBcCLf16lvj5zi-4aQT9"/>
+</div>
+<div class="bg-surface-container-low p-5 rounded-2xl border border-outline-variant/40">
+<span class="material-symbols-outlined text-primary mb-2 text-2xl" data-icon="eco">eco</span>
+<p class="font-title-editorial text-title-editorial text-on-surface font-medium">Quy chuẩn Dệt Nhật</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-1">Đảm bảo độ bền sợi và giữ trọn màu sắc từ bột lá trà thiên nhiên.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 4. Category Showcase (Lưới 4 danh mục nổi bật) -->
+<section class="py-20 lg:py-28 bg-surface-container-lowest border-b border-outline-variant/30">
+<div class="max-w-[1440px] mx-auto px-6 md:px-16">
+<!-- Section Header -->
+<div class="flex flex-col md:flex-row md:items-end justify-between mb-12">
+<div>
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-wider">KHÁM PHÁ THEO PHONG CÁCH</span>
+<h2 class="font-headline-lg text-headline-sm md:font-headline-lg md:text-headline-lg text-on-surface mt-2">
+            Danh Mục Nổi Bật
+          </h2>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-md mt-3 md:mt-0 font-light">
+          Những cấu trúc trang phục được chọn lọc để bạn dễ dàng xây dựng tủ đồ capsule bền vững mọi mùa.
+        </p>
+</div>
+<!-- Category Grid (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+<!-- Category 1: Đầm Linen Thanh Lịch -->
+<div class="group relative rounded-2xl overflow-hidden bg-surface-container border border-outline-variant/40 zen-card-hover">
+<div class="aspect-[3/4] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Editorial fashion photography of a woman wearing an ethereal matcha-hued midi linen wrap dress standing next to a paper shoji screen. Natural soft ambient daylight fills the room with serene shadows. The color palette focuses on pastel sage green, clean bone white, and warm light timber tones." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAyUkyoZZuERnK7wZbfPFteuS9uvMug8D6JwQ-bGtS9yLj5lprsMJcFGK4fQh4AFSlprahtVJvjmQwPKckJzFhzC8m_dMQD4EaeKowcGv1f25-V05xED_xEhPYGAtJMMEYFT-g4Cebh1sWcJB0UODkiAxIMmftJ3kb2nTZHpHooSmhMxid8y5ShZXg2fvwkusv3sx7wq56wG77OMSxSQZkNCYtnx8r_QbbMvEsZ9MN3"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent flex flex-col justify-end p-6 text-white">
+<span class="font-label-caps text-label-caps text-tertiary-fixed tracking-wider">32 SẢN PHẨM</span>
+<h3 class="font-headline-sm text-headline-sm text-white mt-1">Đầm Linen Thanh Lịch</h3>
+<a class="mt-4 inline-flex items-center gap-2 font-label-interactive text-label-interactive text-white/90 group-hover:text-tertiary-fixed transition-colors" href="#dam-vay">
+              Xem bộ sưu tập
+              <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Category 2: Áo Sơ Mi Matcha Tone -->
+<div class="group relative rounded-2xl overflow-hidden bg-surface-container border border-outline-variant/40 zen-card-hover">
+<div class="aspect-[3/4] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Editorial close-up of a relaxed unisex button-up shirt in light tea-green organic poplin fabric draped over a minimal wooden chair. High-key light-mode aesthetic with bright natural morning sunshine creating subtle textured highlights on the collar and natural shell buttons." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBBvN363_FKOV81c70QyWYztZiVEtNtlWdD-3V-QfOXcM2t2sBsxGVkWUJrJU5nao3CLyyEu96WOfTNMj3rOv6_dUzNwk_VBEnxdP-EJ9ONlqx88di958h7o7oPjP8tOzYLytk9FcT6OSdNv96VLMUx_W6k1PdBjLksiqYaT2uzJmCfeAr69ZCXrgrGGmAuNUOtLKzOfH2lVrxXREeY-waSClc9sZiRe3qvLMXqtnRj"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent flex flex-col justify-end p-6 text-white">
+<span class="font-label-caps text-label-caps text-tertiary-fixed tracking-wider">28 SẢN PHẨM</span>
+<h3 class="font-headline-sm text-headline-sm text-white mt-1">Áo Sơ Mi Matcha Tone</h3>
+<a class="mt-4 inline-flex items-center gap-2 font-label-interactive text-label-interactive text-white/90 group-hover:text-tertiary-fixed transition-colors" href="#ao">
+              Xem bộ sưu tập
+              <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Category 3: Quần Ống Rộng Minimalist -->
+<div class="group relative rounded-2xl overflow-hidden bg-surface-container border border-outline-variant/40 zen-card-hover">
+<div class="aspect-[3/4] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Fashion lookbook photo of high-waisted wide-leg tailored trousers in crisp off-white organic cotton paired with minimalist green matcha sandals. The model stands against a textured limewash neutral wall with architectural shadow lines creating a modern zen posture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDY-YX6LvDiyiGMyEtXASlJ9OoQmky65yQQxgbEKQAzJuG2TAYeokd33swfZIE1SAd6DlBNrdxmssgnVBz-WNcoX1WPU2EKppDhCzJm36ktDYy4CvDnYc8x0T9YNYMXYpMsBZmK1Q-ZsYjra6_L0h-rIlzvStc8v5pfdkeYYHlgNif4TfCr8zuPDu8a6aGcI91-dnp1oam6IxiFHCyIcD0N3AkpEKrE1yIk04CT9SFW"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent flex flex-col justify-end p-6 text-white">
+<span class="font-label-caps text-label-caps text-tertiary-fixed tracking-wider">19 SẢN PHẨM</span>
+<h3 class="font-headline-sm text-headline-sm text-white mt-1">Quần Ống Rộng Minimalist</h3>
+<a class="mt-4 inline-flex items-center gap-2 font-label-interactive text-label-interactive text-white/90 group-hover:text-tertiary-fixed transition-colors" href="#quan">
+              Xem bộ sưu tập
+              <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+<!-- Category 4: Phụ Kiện Tinh Tế -->
+<div class="group relative rounded-2xl overflow-hidden bg-surface-container border border-outline-variant/40 zen-card-hover">
+<div class="aspect-[3/4] w-full overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Still life composition of handcrafted vegan leather tote bag in deep matcha green beside a delicate natural silk scarf and ceramic matcha bowl. Pristine daylight creates soft clean reflections on the surfaces, highlighting minimalist artisan luxury." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9hATK2WErGbO94DUJjGf4drUbPvYw8GDQNrqJO_VDoWhN9aHKrV73RoS6w0E_ZIRMbzERnilr04-EvA39aDnC30K6RjillpKwDvm9EQjd_ZR_O2QaTTjTzHlZbDQej2TdCcWxQMuP_hrjwoBRKcoZP_ANxUweLZwxvry9QTDGsAM7MvjqV0v4rh__cip4X1o7eYLAlWUKvQsJegXKA_7q-3v7Gel4z1d5U3Bt-Qfa"/>
+</div>
+<div class="absolute inset-0 bg-gradient-to-t from-black/60 via-black/10 to-transparent flex flex-col justify-end p-6 text-white">
+<span class="font-label-caps text-label-caps text-tertiary-fixed tracking-wider">15 SẢN PHẨM</span>
+<h3 class="font-headline-sm text-headline-sm text-white mt-1">Phụ Kiện Tinh Tế</h3>
+<a class="mt-4 inline-flex items-center gap-2 font-label-interactive text-label-interactive text-white/90 group-hover:text-tertiary-fixed transition-colors" href="#phu-kien">
+              Xem bộ sưu tập
+              <span class="material-symbols-outlined text-[16px] group-hover:translate-x-1 transition-transform" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 5. Featured / Best Sellers Section -->
+<section class="py-20 lg:py-28 bg-surface" id="collection">
+<div class="max-w-[1440px] mx-auto px-6 md:px-16">
+<!-- Section Title & Filter Tabs -->
+<div class="flex flex-col items-center text-center mb-12">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">THIẾT KẾ ĐẶC BIỆT</span>
+<h2 class="font-headline-lg text-headline-sm md:font-headline-lg md:text-headline-lg text-on-surface mt-2">
+          Sản Phẩm Bán Chạy Nhất
+        </h2>
+<!-- Filter Tabs / Chips -->
+<div class="flex flex-wrap items-center justify-center gap-2 mt-8">
+<button class="px-5 py-2 rounded-full bg-secondary-container text-on-surface font-label-interactive text-label-interactive border border-primary/30 transition-all">
+            Tất cả
+          </button>
+<button class="px-5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-interactive text-label-interactive border border-outline-variant hover:border-primary hover:text-primary transition-all">
+            Mới về
+          </button>
+<button class="px-5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-interactive text-label-interactive border border-outline-variant hover:border-primary hover:text-primary transition-all">
+            Bán chạy nhất
+          </button>
+<button class="px-5 py-2 rounded-full bg-surface-container-lowest text-on-surface-variant font-label-interactive text-label-interactive border border-outline-variant hover:border-primary hover:text-primary transition-all">
+            Ưu đãi tuần
+          </button>
+</div>
+</div>
+<!-- 4 Products Grid -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+<!-- Product 1 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-2xl border border-outline-variant/40 p-3 zen-shadow zen-card-hover">
+<div class="relative aspect-[3/4] w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Full body shot of a fashion model wearing an airy midi flared linen dress in matcha leaf green shade with subtle belted waist detail. Studio lighting is soft and neutral with a bright off-white infinity cove background, showcasing the fluidity and organic drape of the garment." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDxM_gVzPnGrZS2a3Yur1KVn_6LGJrUzAjUoKZXqG8Z1QqXb6N3fykuHei3kPvR_sKgiZew71t-7WutxJS4hvUu7pazZ2g-4lf0rTrY7A_tJ55Oukd1IpMFtgHTql_nlEd0MoQ13Ps5ChrTuzgyt0XISm3mdBUx04lU6LAz_Ms-KKm-jKOtuKm6gyM5dWTEqurSxrrq6PY72xVT0jwQwBw90AwzuO1y_j6YoaIoLdkn"/>
+<!-- Badge -->
+<div class="absolute top-3 left-3 bg-surface-bright/90 backdrop-blur-md px-2.5 py-1 rounded-full border border-outline-variant/40">
+<span class="font-label-caps text-label-caps text-primary uppercase">BEST SELLER</span>
+</div>
+<!-- Wishlist Heart -->
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-colors" title="Thêm vào yêu thích">
+<span class="material-symbols-outlined text-[18px]" data-icon="favorite">favorite</span>
+</button>
+<!-- Quick Add Hover Overlay -->
+<div class="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+<a class="w-full py-2.5 bg-primary text-white font-label-interactive text-label-interactive rounded-xl shadow-md hover:bg-tertiary transition-colors flex items-center justify-center gap-2" href="cart.html">
+<span class="material-symbols-outlined text-[18px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+                Thêm nhanh vào giỏ
+              </a>
+</div>
+</div>
+<!-- Product Meta -->
+<div class="pt-4 pb-2 px-1 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center gap-1.5 mb-2">
+<span class="w-3.5 h-3.5 rounded-full bg-[#5C7A58] border border-white shadow-sm ring-1 ring-primary/40"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#EBF1EB] border border-outline-variant shadow-sm"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#F7F9F6] border border-outline-variant shadow-sm"></span>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface font-medium line-clamp-1">
+                Đầm Xòe Midi Linen Matcha Leaf
+              </h3>
+</div>
+<div class="mt-3 flex items-baseline justify-between border-t border-outline-variant/30 pt-2">
+<span class="font-body-md text-body-md font-semibold text-primary">850.000đ</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">100% Linen dệt</span>
+</div>
+</div>
+</div>
+<!-- Product 2 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-2xl border border-outline-variant/40 p-3 zen-shadow zen-card-hover">
+<div class="relative aspect-[3/4] w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Editorial lookbook photograph of a silk blouse in pure morning dew white with relaxed sleeves, styled effortlessly. The minimalist interior features warm daylight casting delicate tree shadows across the garment. The atmosphere is quiet, serene, and exquisitely tailored." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBOADW50PzRppxBi309u9BKsAe190zz3ACLHVTrDYXRsb7mhhtfVB5QkGt7OEfUVeA49CfSU5v1dB5SSV0q9a0wmgc6Hy2aRicnBV-42akMybP5IRvvWtMeWefbk1InzuepymxJu3au8OidOWxjx8m8Sx5CyKdabp2i-53tJuHJJXwa--Bl8c89KGVWPyrv4t2US0uYt2F9SQUHaZyr0rHOP2xWjlXXroVzwxVgHNbc"/>
+<!-- Badge -->
+<div class="absolute top-3 left-3 bg-surface-bright/90 backdrop-blur-md px-2.5 py-1 rounded-full border border-outline-variant/40">
+<span class="font-label-caps text-label-caps text-primary uppercase">MỚI</span>
+</div>
+<!-- Wishlist Heart -->
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-colors" title="Thêm vào yêu thích">
+<span class="material-symbols-outlined text-[18px]" data-icon="favorite">favorite</span>
+</button>
+<!-- Quick Add Hover Overlay -->
+<div class="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+<a class="w-full py-2.5 bg-primary text-white font-label-interactive text-label-interactive rounded-xl shadow-md hover:bg-tertiary transition-colors flex items-center justify-center gap-2" href="cart.html">
+<span class="material-symbols-outlined text-[18px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+                Thêm nhanh vào giỏ
+              </a>
+</div>
+</div>
+<!-- Product Meta -->
+<div class="pt-4 pb-2 px-1 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center gap-1.5 mb-2">
+<span class="w-3.5 h-3.5 rounded-full bg-[#FFFFFF] border border-outline-variant shadow-sm ring-1 ring-primary/40"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#EBF1EB] border border-outline-variant shadow-sm"></span>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface font-medium line-clamp-1">
+                Áo Sơ Mi Lụa Trắng Morning Dew
+              </h3>
+</div>
+<div class="mt-3 flex items-baseline justify-between border-t border-outline-variant/30 pt-2">
+<span class="font-body-md text-body-md font-semibold text-primary">620.000đ</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Lụa Tơ Tằm Tự Nhiên</span>
+</div>
+</div>
+</div>
+<!-- Product 3 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-2xl border border-outline-variant/40 p-3 zen-shadow zen-card-hover">
+<div class="relative aspect-[3/4] w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Editorial model wearing an oversized tailored blazer in soft pale moss green color crafted from breathable textured linen blend. The model poses poised in an art gallery bathed in diffuse northern daylight. The clean lines and relaxed drape highlight modern slow-fashion tailoring." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDkdc7v2bc2DvDasnXmuzgBBXPUx2SRxFr5IWqR-UUGMta4i9R2myD0EodpizzZFYbHTLYgLBss3U3le1mSt_THekSN-e7JH5wuP-Sz1Y__XUXdsElLJRY0i5npV0eBlgmIW9s48_E4v2y_3t7sMY_qkugvsB7dHruRVpgsN4D6YpTbyj8CqsAIdVYS21503SJayL8cKPJNSS4rNTq9MZcBw4eWCetXyLJy6tFYGLIc"/>
+<!-- Wishlist Heart -->
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-colors" title="Thêm vào yêu thích">
+<span class="material-symbols-outlined text-[18px]" data-icon="favorite">favorite</span>
+</button>
+<!-- Quick Add Hover Overlay -->
+<div class="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+<a class="w-full py-2.5 bg-primary text-white font-label-interactive text-label-interactive rounded-xl shadow-md hover:bg-tertiary transition-colors flex items-center justify-center gap-2" href="cart.html">
+<span class="material-symbols-outlined text-[18px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+                Thêm nhanh vào giỏ
+              </a>
+</div>
+</div>
+<!-- Product Meta -->
+<div class="pt-4 pb-2 px-1 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center gap-1.5 mb-2">
+<span class="w-3.5 h-3.5 rounded-full bg-[#5C7A58] border border-white shadow-sm ring-1 ring-primary/40"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#3D553A] border border-white shadow-sm"></span>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface font-medium line-clamp-1">
+                Áo Blazer Dáng Rộng Xanh Rêu Nhạt
+              </h3>
+</div>
+<div class="mt-3 flex items-baseline justify-between border-t border-outline-variant/30 pt-2">
+<span class="font-body-md text-body-md font-semibold text-primary">1.250.000đ</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Vải Sợi Hữu Cơ</span>
+</div>
+</div>
+</div>
+<!-- Product 4 -->
+<div class="group flex flex-col bg-surface-container-lowest rounded-2xl border border-outline-variant/40 p-3 zen-shadow zen-card-hover">
+<div class="relative aspect-[3/4] w-full rounded-xl overflow-hidden bg-surface-container">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500 ease-out" data-alt="Fashion studio shot of a flowy pleated A-line skirt in subtle matcha cream pastel color paired with an ivory sleeveless top. Bright softbox studio light brings out the fine accordion pleats and light textile weave, radiating graceful minimalism." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCjiPojZWObvB6FEUR-RkUdScb1a8Z5ia36ZUwJ7xHEs6rCK_ojhW_vG2_SfgphnOwYrS8fnh-wThiZJWGQekP3dUbDj4YU2rOyNWYfunDi9aeCIgEcEDJYTbfXQ5RgC08W-4l1fGedFwC5XIyRmOls21ms5OSlVg8pK4aLFO9bEpXyap7NYcY89VsE3RQge7IcC6iu14Ubyg9--aT1mW7dP865wGHqA5see3_DApJ2"/>
+<!-- Wishlist Heart -->
+<button class="absolute top-3 right-3 w-8 h-8 rounded-full bg-surface-bright/90 backdrop-blur-md flex items-center justify-center text-on-surface hover:text-error transition-colors" title="Thêm vào yêu thích">
+<span class="material-symbols-outlined text-[18px]" data-icon="favorite">favorite</span>
+</button>
+<!-- Quick Add Hover Overlay -->
+<div class="absolute inset-x-3 bottom-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200">
+<a class="w-full py-2.5 bg-primary text-white font-label-interactive text-label-interactive rounded-xl shadow-md hover:bg-tertiary transition-colors flex items-center justify-center gap-2" href="cart.html">
+<span class="material-symbols-outlined text-[18px]" data-icon="add_shopping_cart">add_shopping_cart</span>
+                Thêm nhanh vào giỏ
+              </a>
+</div>
+</div>
+<!-- Product Meta -->
+<div class="pt-4 pb-2 px-1 flex flex-col flex-1 justify-between">
+<div>
+<div class="flex items-center gap-1.5 mb-2">
+<span class="w-3.5 h-3.5 rounded-full bg-[#EBF1EB] border border-outline-variant shadow-sm ring-1 ring-primary/40"></span>
+<span class="w-3.5 h-3.5 rounded-full bg-[#FFFFFF] border border-outline-variant shadow-sm"></span>
+</div>
+<h3 class="font-body-md text-body-md text-on-surface font-medium line-clamp-1">
+                Chân Váy Xếp Ly Matcha Cream
+              </h3>
+</div>
+<div class="mt-3 flex items-baseline justify-between border-t border-outline-variant/30 pt-2">
+<span class="font-body-md text-body-md font-semibold text-primary">580.000đ</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant">Xếp Ly Nhiệt Bền Dáng</span>
+</div>
+</div>
+</div>
+</div>
+<!-- View All CTA -->
+<div class="mt-14 text-center">
+<a class="inline-flex items-center gap-3 font-label-interactive text-label-interactive px-8 py-3.5 border border-primary text-primary hover:bg-primary hover:text-white rounded-xl transition-all duration-300" href="#all-products">
+          Xem Tất Cả 120+ Mẫu Thiết Kế
+          <span class="material-symbols-outlined text-[18px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</section>
+<!-- 6. Brand Story & Sustainable Philosophy (Split Screen Khối Triết Lý) -->
+<section class="py-20 lg:py-28 bg-surface-container-low border-y border-outline-variant/30 overflow-hidden" id="cau-chuyen">
+<div class="max-w-[1440px] mx-auto px-6 md:px-16">
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-16 items-center">
+<!-- Story Imagery (6 cols) -->
+<div class="lg:col-span-6 relative">
+<div class="grid grid-cols-2 gap-4">
+<div class="aspect-[4/5] rounded-2xl overflow-hidden zen-shadow">
+<img class="w-full h-full object-cover" data-alt="Artisanal textile craftsman dyeing organic linen fabrics in an authentic wooden vat using natural botanical green matcha tea extracts. Soft sunbeams illuminate water droplets and steam inside a rustic Japanese workshop. The palette is dominated by earthen sage, moss tones, and warm natural wood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuApzgi2WiiJTtfgKZrJTDvF7I6f5Y0vqiSi86Pr97yiy8wcrIFcMmHddt0BYgdB-ZDnTivTVf1CgBun7UwXPWX67i7JLkS8vUA7I1da4AWCYea9PHcmyp2tmbI_B_Dh5yZcCALrMygvqU8RLFzrLr513AkqoKNBdTr8_cIGlVps_NPzZJpcaqaUHbXQbrLnkYWc4ycNe-ZGEeKWD8Vo1effTowiPIi1fB18rey4oSm5"/>
+</div>
+<div class="aspect-[4/5] rounded-2xl overflow-hidden mt-8 zen-shadow">
+<img class="w-full h-full object-cover" data-alt="Flatlay composition displaying freshly harvested organic tea leaves, unspun pure organic cotton bolls, and wooden weaving shuttles on textured off-white washi paper. Clean crisp daylight casts delicate natural shadows, embodying sustainable harmony with nature." src="https://lh3.googleusercontent.com/aida-public/AB6AXuByaKcKq3aucWtfEHh1yzK6L-xI_4ASQpxdLAOurE-ScucuIVUfQvRVmJ7aXdkNj6lrfLEzziZUS6RY7mMyMiPcJHGr5A-NJT2ZBtuLKhE69KC731orao8C_0VZOZaHkLgjoMZJzKeqYdjk-OZgSgR-15ikzP_j2KnTWq-mQY7ryvw5rLjj0MCdFuWwK2L2d9QXNqmyEpB2xPpqdIePtk3W3at3SxPCUmnPtDWe-zNg"/>
+</div>
+</div>
+<!-- Decorative Floating Seal -->
+<div class="absolute -bottom-6 left-1/2 -translate-x-1/2 bg-surface-container-lowest px-6 py-3 rounded-full border border-primary/20 shadow-md flex items-center gap-3">
+<span class="material-symbols-outlined text-primary text-[20px]" data-icon="verified">verified</span>
+<span class="font-label-caps text-label-caps text-on-surface uppercase tracking-wider">Chứng nhận GOTS Organic Cotton</span>
+</div>
+</div>
+<!-- Story Philosophy Text (6 cols) -->
+<div class="lg:col-span-6 flex flex-col justify-center space-y-6">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">TRIẾT LÝ SÁNG TẠO</span>
+<h2 class="font-headline-lg text-headline-sm md:font-headline-lg md:text-headline-lg text-on-surface leading-tight">
+            Khi Sợi Vải Thấm Đẫm <br/>
+<span class="italic text-primary font-normal">Hơi Thở Của Đất Mẹ</span>
+</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant font-light leading-relaxed">
+            Tại <strong>Matcha Atelier</strong>, chúng tôi không tạo ra trang phục chạy theo những xu hướng thoáng qua. Mỗi thiết kế là một cuộc đối thoại giữa kỹ nghệ dệt tay truyền thống và triết lý sống chậm <em>wabi-sabi</em>: nâng niu vẻ đẹp mộc mạc và nguyên bản.
+          </p>
+<p class="font-body-md text-body-md text-on-surface-variant font-light leading-relaxed">
+            Sắc xanh đặc trưng của xưởng dệt được chiết xuất thủ công từ búp chè xanh Uji và các loại thảo mộc lành tính, không chứa hóa chất độc hại, thân thiện tuyệt đối với làn da nhạy cảm và hoàn toàn có thể tự phân hủy sinh học trong lòng đất.
+          </p>
+<!-- Accordion Fabric Attributes -->
+<div class="border-t border-outline-variant/40 pt-4 space-y-4">
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]" data-icon="spa">spa</span>
+</div>
+<div>
+<h4 class="font-body-md text-body-md text-on-surface font-semibold">100% Nhuộm Thảo Mộc Tự Nhiên</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Không tồn dư hóa chất kim loại nặng, giữ được độ dịu mát tự nhiên của trà xanh trên từng thớ sợi.</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<div class="w-8 h-8 rounded-full bg-secondary-container flex items-center justify-center shrink-0 text-primary">
+<span class="material-symbols-outlined text-[18px]" data-icon="recycling">recycling</span>
+</div>
+<div>
+<h4 class="font-body-md text-body-md text-on-surface font-semibold">Vòng Tuần Hoàn Sinh Thái Bền Vững</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Tiết kiệm 75% lượng nước so với dệt công nghiệp thông thường, bao bì đóng gói tự phân hủy từ bã mía.</p>
+</div>
+</div>
+</div>
+<div class="pt-4">
+<a class="font-label-interactive text-label-interactive text-primary border-b border-primary pb-1 hover:text-tertiary transition-colors inline-flex items-center gap-2" href="#about-philosophy">
+              Đọc toàn bộ hành trình Organic Cotton &amp; Linen
+              <span class="material-symbols-outlined text-[16px]" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 7. Curated Lookbook Grid (Bố Cục Tạp Chí & Mix & Match) -->
+<section class="py-20 lg:py-28 bg-surface" id="lookbook">
+<div class="max-w-[1440px] mx-auto px-6 md:px-16">
+<div class="text-center max-w-2xl mx-auto mb-16">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">CURATED LOOKBOOK</span>
+<h2 class="font-headline-lg text-headline-sm md:font-headline-lg md:text-headline-lg text-on-surface mt-2">
+          Gợi Ý Phối Đồ Cho Nàng Hiện Đại
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 font-light">
+          Chạm vào các điểm đánh dấu trên hình để xem ngay công thức trang phục hoàn hảo cho ngày làm việc lẫn kỳ nghỉ dưỡng.
+        </p>
+</div>
+<!-- Asymmetric Bento Lookbook Layout -->
+<div class="grid grid-cols-1 md:grid-cols-12 gap-6 items-stretch">
+<!-- Large Look Feature (7 Cols) -->
+<div class="md:col-span-7 relative rounded-2xl overflow-hidden bg-surface-container zen-shadow min-h-[500px]">
+<img class="w-full h-full object-cover" data-alt="Editorial full-length outdoor portrait of a stylish woman walking through an airy serene courtyard. She wears a relaxed matcha linen overshirt, wide ivory linen culottes, and carries an organic canvas tote. Soft golden morning hour light bathes the entire scene with a clean modern light-mode feeling." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIWu8SkoEFeUvGuGfz9r0wEjInZrFgRxgMj17Zxv6cYtQ1oW3OmM4aZS9Gqrh-mXfehPDgrbwjTVGF7dMmgfpa4qJlT-6X4lxYjwVln7n74DtCR3cDbDLxWVHuQ46GGX9GjWNoL1dKiGemWfUrtSkFg2NZ_53sZfHxIaQb6151WYHBUrXxYtD251eTK3MMAJI4srbBMITYhfYTSqQBxGDHsNwE_5USTA8_fVDfhdyR"/>
+<!-- Interactive Pin 1: Áo Khoác -->
+<div class="absolute top-[32%] left-[45%] group/pin">
+<button class="w-6 h-6 rounded-full bg-surface-bright text-primary border-2 border-primary shadow-lg flex items-center justify-center animate-bounce">
+<span class="material-symbols-outlined text-[12px]" data-icon="add">add</span>
+</button>
+<div class="absolute left-8 top-1/2 -translate-y-1/2 w-48 bg-surface-bright/95 backdrop-blur-md p-3 rounded-xl border border-outline-variant/60 shadow-lg hidden group-hover/pin:block">
+<p class="font-label-caps text-label-caps text-primary uppercase">ÁO KHOÁC LINEN</p>
+<p class="font-body-sm text-body-sm font-medium text-on-surface">Matcha Studio Coat</p>
+<p class="font-body-sm text-body-sm font-semibold text-primary mt-1">980.000đ</p>
+</div>
+</div>
+<!-- Interactive Pin 2: Quần Culottes -->
+<div class="absolute bottom-[35%] left-[55%] group/pin">
+<button class="w-6 h-6 rounded-full bg-surface-bright text-primary border-2 border-primary shadow-lg flex items-center justify-center">
+<span class="material-symbols-outlined text-[12px]" data-icon="add">add</span>
+</button>
+<div class="absolute right-8 top-1/2 -translate-y-1/2 w-48 bg-surface-bright/95 backdrop-blur-md p-3 rounded-xl border border-outline-variant/60 shadow-lg hidden group-hover/pin:block">
+<p class="font-label-caps text-label-caps text-primary uppercase">QUẦN DÁNG RỘNG</p>
+<p class="font-body-sm text-body-sm font-medium text-on-surface">Culottes White Mist</p>
+<p class="font-body-sm text-body-sm font-semibold text-primary mt-1">720.000đ</p>
+</div>
+</div>
+<div class="absolute bottom-6 left-6 bg-surface-bright/90 backdrop-blur-md px-5 py-3 rounded-xl border border-outline-variant/40">
+<span class="font-label-caps text-label-caps text-primary uppercase tracking-wider">SET 01 • URBAN BOTANIC</span>
+<p class="font-headline-sm text-headline-sm text-on-surface font-serif">Phong cách Thành Thị Tự Tại</p>
+</div>
+</div>
+<!-- 2 Stacked Smaller Looks (5 Cols) -->
+<div class="md:col-span-5 flex flex-col gap-6">
+<div class="relative flex-1 rounded-2xl overflow-hidden bg-surface-container zen-shadow min-h-[260px]">
+<img class="w-full h-full object-cover" data-alt="Fashion styling close-up showing a delicate combination of matcha silk camisole paired with a chunky organic knitted cream cardigan. Natural soft daylight hits the tactile knit textures with a feeling of quiet luxury and peaceful afternoon calm." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC1s5Bd4o5YpJpJY7DJIGoVYD7gVZ3S582SZxaR1P5-tGldHZVQepTJMAt3HL09kjKmzvxZzt9FXdtyN0rfMbW7Udf3LP1Bhe_YFNbzkMoyxB-Z1L31m1duwlSi4Jw57OzNL6HOKJDOjOYb31_txgiNpmzRth49BlXjp531FG3FiXlEQYisGVKJPxS-vCPxbzYdSAhFYMvFnss2BDMXtne3qttQIr5-jbq-HL7rtLWr"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+<span class="font-label-caps text-label-caps text-tertiary-fixed tracking-wider uppercase">SET 02 • WEEKEND CALM</span>
+<h3 class="font-headline-sm text-headline-sm text-white">Áo Lụa &amp; Cardigan Mùa Xuân</h3>
+<p class="font-body-sm text-body-sm text-white/90 mt-1">Kết hợp giữa sự nữ tính mềm mại và ấm áp dịu dàng.</p>
+</div>
+</div>
+<div class="relative flex-1 rounded-2xl overflow-hidden bg-surface-container zen-shadow min-h-[260px]">
+<img class="w-full h-full object-cover" data-alt="Editorial look of a Japanese tea-ceremony-inspired minimalist wraparound tunic dress in soft muted moss green worn with delicate silver handcrafted jewelry in an ambient peaceful tea room." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCSRBk3t2iZFocjUu1UOci_JKX6Y6MoOzd8dC3g27OCZSM-PXLN_YiVjDXnAqO2KYIptyjQjlil5OVh6LaoRIUFHFCXtlLrhxhJMfqdvFBIK7Cd-WilQKlsxGQVu7mGv2SMbug1wM31yQkcS36DnMT6t81Pi18QGg8erj6N1rEi1_En15dpcWMyLmq7-xPdKlqipnI6cVY_LQ2v3eyFYg6oXFPGb2N6vm_MgGEMjwB8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/50 via-transparent to-transparent flex flex-col justify-end p-6 text-white">
+<span class="font-label-caps text-label-caps text-tertiary-fixed tracking-wider uppercase">SET 03 • TEA CEREMONY</span>
+<h3 class="font-headline-sm text-headline-sm text-white">Đầm Vạt Chéo Zen Silhouette</h3>
+<p class="font-body-sm text-body-sm text-white/90 mt-1">Lấy cảm hứng từ nét đoan trang của kimono truyền thống.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- 8. Customer Reviews / Social Proof -->
+<section class="py-20 lg:py-28 bg-surface-container-lowest border-y border-outline-variant/30">
+<div class="max-w-[1440px] mx-auto px-6 md:px-16">
+<div class="text-center max-w-xl mx-auto mb-16">
+<div class="flex items-center justify-center gap-1 text-primary mb-3">
+<span class="material-symbols-outlined text-[20px] fill-icon text-primary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px] fill-icon text-primary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px] fill-icon text-primary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px] fill-icon text-primary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[20px] fill-icon text-primary" data-icon="star" data-weight="fill" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<h2 class="font-headline-lg text-headline-sm md:font-headline-lg md:text-headline-lg text-on-surface">
+          Được Yêu Thích Bởi Những Tâm Hồn Tinh Tế
+        </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-2 font-light">
+          Hơn 98% khách hàng đánh giá 5 sao về độ thoáng mát và sự tinh tế trong từng đường kim mũi chỉ.
+        </p>
+</div>
+<!-- 3 Testimonial Cards -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+<!-- Review 1 -->
+<div class="bg-surface p-8 rounded-2xl border border-outline-variant/40 flex flex-col justify-between zen-shadow">
+<div>
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-light italic leading-relaxed">
+              "Chiếc đầm linen xanh matcha này đã trở thành trang phục yêu thích nhất trong chuyến du lịch Kyoto vừa rồi của mình. Chất vải rũ tự nhiên, mặc vào cảm giác nhẹ tênh như làn gió, chụp ảnh lên màu cực kỳ sang và nhã nhặn."
+            </p>
+</div>
+<div class="flex items-center gap-4 mt-8 pt-6 border-t border-outline-variant/30">
+<div class="w-11 h-11 rounded-full overflow-hidden bg-surface-container shrink-0 border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of a young Southeast Asian woman with natural minimal makeup, wearing a delicate off-white linen top with a calm radiant smile in warm natural light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBzy0pBx5r7x8zFEsRBYAaWlvnqrRwPqmhZgYEiMiS31DiEWKLKYkXMqckZ25EcHvvvGWPCL2KU_bfaqOwVDL1UOIeHJJovtQix9q_02wpTs61VCQT8zOJu8uioZwownMIEfuQNC1Q1uuvMmfWmvvUTPRLsU2nXtRMnXVS_Kw2ueH-owu0GSHHAwMY6UTU4AseF2tbM81DxHembGcTxTNK0PfATPEhwx5nERHmrb2ke"/>
+</div>
+<div>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">Khánh Linh</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant">Fashion Blogger &amp; Stylist</p>
+</div>
+</div>
+</div>
+<!-- Review 2 -->
+<div class="bg-surface p-8 rounded-2xl border border-outline-variant/40 flex flex-col justify-between zen-shadow">
+<div>
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-light italic leading-relaxed">
+              "Điểm mình mê nhất là bảng màu xanh rêu nhạt không lẫn vào đâu được. Đồ của Matcha Atelier mang lại một sự an tĩnh kỳ lạ giữa nhịp sống bận rộn. Đường may cuộn mí giấu chỉ sắc sảo chuẩn chất couture."
+            </p>
+</div>
+<div class="flex items-center gap-4 mt-8 pt-6 border-t border-outline-variant/30">
+<div class="w-11 h-11 rounded-full overflow-hidden bg-surface-container shrink-0 border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="Close portrait of a thoughtful creative director woman with clean hair bun, wearing subtle aesthetic earrings, standing against a calm architectural background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuACAHgZ7ViuO9uyjdcV31mzOBmpOtqcQvJu1IGh0hY5Rx3hd6d19SllD6Z1H5b-GUqBEFsFx234f23Q3PmQz2xBrMTv2HZUZphfvrfdIPpOHtih096M264OwvWqAU3EMxT7j8TIHz7iT_UYfW_K1xb7XL5qBpVQsf2x6bksYxQa9_QCTzQlWKULS7y-_loW01_laWSEzhQMOqknMxFEqZDImeQkB5ygZtL6VDFUgV5I"/>
+</div>
+<div>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">Minh Trang</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant">Kiến Trúc Sư Nội Thất</p>
+</div>
+</div>
+</div>
+<!-- Review 3 -->
+<div class="bg-surface p-8 rounded-2xl border border-outline-variant/40 flex flex-col justify-between zen-shadow">
+<div>
+<div class="flex text-primary mb-4">
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="star" style="font-variation-settings: 'FILL' 1;">star</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface font-light italic leading-relaxed">
+              "Dịch vụ đóng gói đẹp như một món quà từ thiên nhiên, kèm một nhành lá khô thơm thảo mộc. Thật sự trân trọng cam kết bảo vệ môi trường và triết lý thời trang bền vững có tâm của thương hiệu."
+            </p>
+</div>
+<div class="flex items-center gap-4 mt-8 pt-6 border-t border-outline-variant/30">
+<div class="w-11 h-11 rounded-full overflow-hidden bg-surface-container shrink-0 border border-outline-variant">
+<img class="w-full h-full object-cover" data-alt="Portrait photo of an elegant woman wearing a pale matcha silk shirt with gentle candid smile in soft morning ambient light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBkPy2DSgM3HIbubAxrjuT-1nIOD7_fOvDcQmK5IIIDQ4W0jDdmQzFi1Qqzj4_O4cYZjgyywbEKLujqvfRglYcRwL2KlKkp2r7DhVBZtRfgEerT-yE78RXl7BMapYVU-aiJLk95ugj43jmlCqQ0tfuDh6Kn2Ozr0gw_uEJos0SVd56l9_7MH54vlsct6GlOb6ccoazEuMVeRXSpvYybssGzxJOkuLJX5ZdoAWiYdgbs"/>
+</div>
+<div>
+<h4 class="font-body-md text-body-md font-semibold text-on-surface">Thanh Hà</h4>
+<p class="font-label-caps text-label-caps text-on-surface-variant">Khách hàng thân thiết (VIP Club)</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Press Logos -->
+<div class="mt-16 pt-12 border-t border-outline-variant/30 flex flex-wrap items-center justify-center gap-8 md:gap-16 opacity-60">
+<span class="font-headline-sm text-headline-sm font-serif tracking-widest text-on-surface">ELLE VIETNAM</span>
+<span class="font-headline-sm text-headline-sm font-serif tracking-widest text-on-surface">L'OFFICIEL</span>
+<span class="font-headline-sm text-headline-sm font-serif tracking-widest text-on-surface">HARPER'S BAZAAR</span>
+<span class="font-headline-sm text-headline-sm font-serif tracking-widest text-on-surface">DEPREVIEW</span>
+</div>
+</div>
+</section>
+<!-- 9. Newsletter Subscription Banner -->
+<section class="py-16 md:py-24 bg-surface">
+<div class="max-w-[1440px] mx-auto px-6 md:px-16">
+<div class="relative bg-secondary-container rounded-3xl p-8 md:p-14 lg:p-16 overflow-hidden border border-outline-variant/40 zen-shadow">
+<!-- Subtle Organic Background Graphic Glow -->
+<div class="absolute -right-20 -bottom-20 w-80 h-80 rounded-full bg-primary/10 blur-3xl pointer-events-none"></div>
+<div class="relative max-w-2xl mx-auto text-center">
+<span class="font-label-caps text-label-caps uppercase text-primary tracking-widest">ĐẶC QUYỀN THÀNH VIÊN ATELIER</span>
+<h2 class="font-headline-lg text-headline-sm md:font-headline-lg md:text-headline-lg text-on-surface mt-2">
+            Nhận Mã Ưu Đãi 10% Cho Đơn Hàng Đầu Tiên
+          </h2>
+<p class="font-body-md text-body-md text-on-surface-variant mt-3 font-light">
+            Đăng ký nhận bản tin về các bộ sưu tập giới hạn, nhật ký nguồn gốc vải hữu cơ và những lời mời tham dự sự kiện trà đạo thân mật.
+          </p>
+<!-- Input Group -->
+<form class="mt-8 flex flex-col sm:flex-row gap-3 max-w-lg mx-auto" onsubmit="event.preventDefault(); alert('Cảm ơn bạn đã đăng ký nhận bản tin Matcha Atelier!');">
+<input class="flex-1 h-12 px-5 bg-surface-container-lowest rounded-xl border border-outline-variant/70 text-on-surface placeholder:text-outline font-body-md text-body-md focus:outline-none focus:border-primary transition-colors" placeholder="Nhập địa chỉ email của bạn..." required="" type="email"/>
+<button class="h-12 px-8 bg-primary text-white font-label-interactive text-label-interactive rounded-xl hover:bg-tertiary transition-colors shrink-0 flex items-center justify-center gap-2" type="submit">
+<span>Đăng Ký</span>
+<span class="material-symbols-outlined text-[18px]" data-icon="send">send</span>
+</button>
+</form>
+<p class="font-body-sm text-body-sm text-on-surface-variant/80 mt-4">
+            Chúng tôi tôn trọng quyền riêng tư của bạn. Không spam, hủy đăng ký bất cứ lúc nào.
+          </p>
+</div>
+</div>
+</div>
+</section>
+<!-- 10. Footer (Shared Component JSON Blueprint & Constraints) -->
+<footer class="bg-surface-container-low dark:bg-inverse-surface border-t border-outline-variant/50 dark:border-outline/30 docked full-width bottom transition-all duration-200 ease-out">
+<div class="w-full max-w-[1440px] mx-auto px-6 md:px-16 py-16 lg:py-24">
+<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-12 lg:gap-8 pb-16 border-b border-outline-variant/40">
+<!-- Brand Narrative & Socials (2 cols) -->
+<div class="lg:col-span-2 space-y-5">
+<a class="text-headline-lg font-headline-lg text-primary dark:text-inverse-primary tracking-wide block" href="#">
+            MATCHA ATELIER
+          </a>
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant font-light max-w-sm">
+            Thương hiệu thời trang hữu cơ phong cách tối giản thanh lịch. Kết tinh tình yêu thiên nhiên, màu sắc mộc mạc của lá trà và sự tinh tế trong lối sống hiện đại.
+          </p>
+<!-- Social Links -->
+<div class="flex items-center gap-4 pt-2">
+<a class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#" title="Instagram">
+<span class="font-body-sm text-body-sm font-bold">IG</span>
+</a>
+<a class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#" title="Pinterest">
+<span class="font-body-sm text-body-sm font-bold">PIN</span>
+</a>
+<a class="w-9 h-9 rounded-full bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary transition-colors" href="#" title="Facebook">
+<span class="font-body-sm text-body-sm font-bold">FB</span>
+</a>
+</div>
+</div>
+<!-- Column 1: Chăm sóc khách hàng -->
+<div class="space-y-4">
+<p class="font-label-caps text-label-caps uppercase text-primary dark:text-inverse-primary tracking-wider">HỖ TRỢ KHÁCH HÀNG</p>
+<ul class="space-y-3 font-label-interactive text-label-interactive">
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">
+                Chính sách đổi trả &amp; bảo hành
+              </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">
+                Hướng dẫn chọn kích cỡ
+              </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">
+                Chính sách bảo mật
+              </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">
+                Điều khoản sử dụng
+              </a>
+</li>
+</ul>
+</div>
+<!-- Column 2: Vải Vóc & Bền Vững -->
+<div class="space-y-4">
+<p class="font-label-caps text-label-caps uppercase text-primary dark:text-inverse-primary tracking-wider">CHẤT LIỆU &amp; BẢO QUẢN</p>
+<ul class="space-y-3 font-label-interactive text-label-interactive">
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">
+                Bảo quản chất liệu Linen &amp; Cotton
+              </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">
+                Hành trình Organic Cotton
+              </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">
+                Kỹ thuật nhuộm thảo mộc
+              </a>
+</li>
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">
+                Báo cáo tác động môi trường
+              </a>
+</li>
+</ul>
+</div>
+<!-- Column 3: Liên hệ & Cửa hàng -->
+<div class="space-y-4">
+<p class="font-label-caps text-label-caps uppercase text-primary dark:text-inverse-primary tracking-wider">CỬA HÀNG &amp; LIÊN HỆ</p>
+<ul class="space-y-3 font-label-interactive text-label-interactive">
+<li>
+<a class="text-on-surface-variant dark:text-surface-variant hover:text-primary dark:hover:text-inverse-primary transition-colors" href="#">
+                Liên hệ &amp; Cửa hàng
+              </a>
+</li>
+<li class="text-on-surface-variant dark:text-surface-variant font-body-sm text-body-sm">
+              Flagship Atelier: 18 Nam Kỳ Khởi Nghĩa, Q.1, TP. Hồ Chí Minh
+            </li>
+<li class="text-on-surface-variant dark:text-surface-variant font-body-sm text-body-sm">
+              Hotline: 1900 6886 (08:30 - 21:30)
+            </li>
+<li class="text-on-surface-variant dark:text-surface-variant font-body-sm text-body-sm">
+              Email: contact@matcha-atelier.vn
+            </li>
+</ul>
+</div>
+</div>
+<!-- Copyright Subfooter -->
+<div class="pt-8 flex flex-col md:flex-row items-center justify-between gap-4 text-center md:text-left">
+<p class="font-body-md text-body-md text-on-surface-variant dark:text-surface-variant">
+          © 2025 Matcha Atelier. Tất cả quyền được bảo lưu. Tinh hoa thời trang sinh thái &amp; bền vững.
+        </p>
+<div class="flex items-center gap-6">
+<span class="inline-flex items-center gap-1 font-body-sm text-body-sm text-primary">
+<span class="material-symbols-outlined text-[16px]" data-icon="eco">eco</span>
+            Đóng gói 100% không rác thải nhựa
+          </span>
+</div>
+</div>
+</div>
+</footer>
+</body></html>
+
